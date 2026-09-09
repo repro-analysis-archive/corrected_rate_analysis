@@ -1,0 +1,109 @@
+{
+ "date": "2026-07-25",
+ "device": "mps",
+ "repo": "microsoft/rad-dino",
+ "revision": "2ec9ca0e7a73c23aded999b844acd2f07c7e46b9",
+ "amendment": "8.3a (commit 6a969e6d3e3cdd6b8574e1082301077c3b9d2ef2)",
+ "pooling_trial_order": [
+  "cls",
+  "mean_patch",
+  "pooler"
+ ],
+ "cohorts": {
+  "her2neg": {
+   "n": 739,
+   "archive_shape": [
+    739,
+    768
+   ],
+   "trials": {
+    "cls": {
+     "cosine_median": 0.9999994445362024,
+     "cosine_min": 0.9999924888085729,
+     "cos_lt_0.9999": 0,
+     "cos_lt_0.99": 0,
+     "max_abs_diff": 0.008183717727661133,
+     "median_abs_diff": 0.00038833916187287765,
+     "verdict": "NOT_REPRODUCED",
+     "reason": "max abs diff 8.184e-03 exceeds 1e-4",
+     "elapsed_s": 117.8,
+     "n_failed": 0
+    },
+    "mean_patch": {
+     "cosine_median": 0.4934870859997252,
+     "cosine_min": 0.3085717096068245,
+     "cos_lt_0.9999": 739,
+     "cos_lt_0.99": 739,
+     "max_abs_diff": 3.0457236766815186,
+     "median_abs_diff": 0.330680064857006,
+     "verdict": "DROP",
+     "reason": "cosine below 0.99",
+     "elapsed_s": 118.1,
+     "n_failed": 0
+    },
+    "pooler": {
+     "cosine_median": 0.9999994445362024,
+     "cosine_min": 0.9999924888085729,
+     "cos_lt_0.9999": 0,
+     "cos_lt_0.99": 0,
+     "max_abs_diff": 0.008183717727661133,
+     "median_abs_diff": 0.00038833916187287765,
+     "verdict": "NOT_REPRODUCED",
+     "reason": "max abs diff 8.184e-03 exceeds 1e-4",
+     "elapsed_s": 198.9,
+     "n_failed": 0
+    }
+   }
+  },
+  "her2pos": {
+   "n": 241,
+   "archive_shape": [
+    241,
+    768
+   ],
+   "trials": {
+    "cls": {
+     "cosine_median": 0.9999994811646103,
+     "cosine_min": 0.9999925490247534,
+     "cos_lt_0.9999": 0,
+     "cos_lt_0.99": 0,
+     "max_abs_diff": 0.008641183376312311,
+     "median_abs_diff": 0.0003773570060730397,
+     "verdict": "NOT_REPRODUCED",
+     "reason": "max abs diff 8.641e-03 exceeds 1e-4",
+     "elapsed_s": 63.4,
+     "n_failed": 0
+    },
+    "mean_patch": {
+     "cosine_median": 0.49563818232286433,
+     "cosine_min": 0.33918166420174883,
+     "cos_lt_0.9999": 241,
+     "cos_lt_0.99": 241,
+     "max_abs_diff": 2.8536633253097534,
+     "median_abs_diff": 0.32729198038578045,
+     "verdict": "DROP",
+     "reason": "cosine below 0.99",
+     "elapsed_s": 45.7,
+     "n_failed": 0
+    },
+    "pooler": {
+     "cosine_median": 0.9999994811646103,
+     "cosine_min": 0.9999925490247534,
+     "cos_lt_0.9999": 0,
+     "cos_lt_0.99": 0,
+     "max_abs_diff": 0.008641183376312311,
+     "median_abs_diff": 0.0003773570060730397,
+     "verdict": "NOT_REPRODUCED",
+     "reason": "max abs diff 8.641e-03 exceeds 1e-4",
+     "elapsed_s": 40.6,
+     "n_failed": 0
+    }
+   }
+  }
+ },
+ "accepted_pooling_by_cohort": {
+  "her2neg": null,
+  "her2pos": null
+ },
+ "OVERALL": "SEE_TRIALS"
+}

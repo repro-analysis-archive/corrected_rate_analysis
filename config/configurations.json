@@ -1,0 +1,145 @@
+{
+ "source_of_truth": "transcribed from the released scripts (src/rate_analysis/r4_stageA.py, fit_priorities.py, build_Z.py, rate_primary.R); the scripts govern",
+ "cohorts": {
+  "her2neg": {
+   "her2": 0.0,
+   "control_arm_nac_agent": "Paclitaxel",
+   "n": 739
+  },
+  "her2pos": {
+   "her2": 1.0,
+   "control_arm_nac_agent": "Paclitaxel + Trastuzumab",
+   "n": 241,
+   "status": "NOT ESTIMATED FOR INFERENCE"
+  }
+ },
+ "dataset_filter": "clinical_and_imaging_info.xlsx rows with dataset == 'ISPY2', matching her2 value, non-missing pcr; workbook row order = analysis-frame order",
+ "outcome": "pcr (pathologic complete response, binary)",
+ "treatment": "T = 1 if nac_agent != control arm of the cohort, else 0",
+ "populations": {
+  "primary_her2neg": 739,
+  "H1_train": 370,
+  "H2_evaluation": 369,
+  "empty_arm_exclusion_sensitivity": {
+   "n": 728,
+   "excluded_epochs": [
+    1,
+    21
+   ]
+  }
+ },
+ "split": {
+  "rule": "numpy.random.default_rng(42).permutation(n); first ceil(n/2) indices -> train (H1), remainder -> evaluation (H2); Y and T not used; no stratification"
+ },
+ "enrolment_epochs": {
+  "generator": "src/rate_analysis/derive_epochs.py",
+  "rule": "boundaries at the first observed acquisition date and the day after the last observed date of every experimental arm (all nac_agent values except the two control arms); populated intervals numbered chronologically; 22 epochs"
+ },
+ "effect_modifiers_X": {
+  "clinical_block": [
+   "age (median-imputed within cohort)",
+   "tumor_subtype_enc",
+   "ethnicity_enc",
+   "bmi_group_enc",
+   "menopause_enc"
+  ],
+  "encoding": "sklearn LabelEncoder on the string levels (frozen); StandardScaler fitted on the training half",
+  "imaging_blocks": {
+   "rad": {
+    "source": "corrected radiomics, 107 features, binCount 64",
+    "pca_components": 20
+   },
+   "clip": {
+    "source": "BiomedCLIP 512-d image embedding",
+    "pca_components": 30
+   },
+   "dino": {
+    "source": "RAD-DINO CLS token 768-d",
+    "pca_components": 30
+   }
+  },
+  "imaging_preprocessing": "StandardScaler then PCA(k, random_state=42), both fitted on the training half only (regime A)"
+ },
+ "configurations": {
+  "Clinical only": [],
+  "Clin + Radiomics": [
+   [
+    "rad",
+    20
+   ]
+  ],
+  "Clin + BiomedCLIP": [
+   [
+    "clip",
+    30
+   ]
+  ],
+  "Clin + RAD-DINO": [
+   [
+    "dino",
+    30
+   ]
+  ],
+  "Clin + Rad + BiomedCLIP": [
+   [
+    "rad",
+    20
+   ],
+   [
+    "clip",
+    30
+   ]
+  ],
+  "Clin + Rad + RAD-DINO": [
+   [
+    "rad",
+    20
+   ],
+   [
+    "dino",
+    30
+   ]
+  ]
+ },
+ "historically_designated_reference_configuration": "Clin + Rad + BiomedCLIP",
+ "baseline_configuration": "Clinical only",
+ "nuisance_covariates_W": "22 relative-enrolment epoch indicators (one-hot of the regenerated epoch assignment), omitted in the no-epoch sensitivity",
+ "prioritization_model": {
+  "estimator": "econml.dml.CausalForestDML",
+  "n_estimators": 500,
+  "min_samples_leaf": 20,
+  "cv": 5,
+  "discrete_treatment": true,
+  "random_state": 42,
+  "model_y": "RandomForestRegressor(n_estimators=500, min_samples_leaf=5, max_features='sqrt', random_state=42)",
+  "model_t": "RandomForestClassifier(same hyperparameters); RandomForestRegressor with discrete_treatment=False in the alternative treatment-nuisance sensitivity"
+ },
+ "evaluation_covariates_Z": {
+  "definition": "imaging-free; age (+ missingness indicator), hr, mammaprint, ethnicity one-hot, bmi_group one-hot, menopause one-hot ('pre' variants merged), epoch one-hot from a fixed 22-level basis",
+  "excluded": [
+   "tumor_subtype (collinear with hr)",
+   "her2 (constant)",
+   "radiomics",
+   "BiomedCLIP",
+   "RAD-DINO"
+  ]
+ },
+ "evaluation_forest": {
+  "package": "grf 2.6.1",
+  "call": "causal_forest(X = Z, Y, W = T, num.trees = 2000, seed = 42) on the evaluation half only",
+  "scores": "get_scores() doubly robust scores"
+ },
+ "rate": {
+  "function": "grf::rank_average_treatment_effect / rank_average_treatment_effect.fit",
+  "target": "AUTOC",
+  "bootstrap": "half-sample bootstrap, R = 2000, set.seed(20260906) before every call",
+  "ci": "estimate +/- 1.96 * SE",
+  "p": "2 * pnorm(-|estimate / SE|)",
+  "multiplicity": "Holm across the six Q1 tests; none for the single Q2 primary contrast"
+ },
+ "sequential_sensitivity": {
+  "partition": "new Y-independent random 5-fold partition, seed 42",
+  "rule": "fit on folds 1..k-1, evaluate on fold k, k = 2..5",
+  "aggregation": "z = sum(t_k) / sqrt(K-1), K = 5"
+ }
+}

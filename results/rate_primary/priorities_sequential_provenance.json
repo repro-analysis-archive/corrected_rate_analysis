@@ -1,0 +1,570 @@
+{
+ "fold2|Clinical only": {
+  "clin_scaler_fit_rows": 148,
+  "imaging_fit_rows": [],
+  "n_train": 148,
+  "n_eval": 148,
+  "X_train_shape": [
+   148,
+   5
+  ],
+  "X_eval_shape": [
+   148,
+   5
+  ],
+  "W_used": true,
+  "discrete_treatment": true,
+  "elapsed_s": 1.99
+ },
+ "fold2|Clin + Radiomics": {
+  "clin_scaler_fit_rows": 148,
+  "imaging_fit_rows": [
+   {
+    "block": "rad",
+    "k": 20,
+    "fit_rows": 148
+   }
+  ],
+  "n_train": 148,
+  "n_eval": 148,
+  "X_train_shape": [
+   148,
+   25
+  ],
+  "X_eval_shape": [
+   148,
+   25
+  ],
+  "W_used": true,
+  "discrete_treatment": true,
+  "elapsed_s": 2.12
+ },
+ "fold2|Clin + BiomedCLIP": {
+  "clin_scaler_fit_rows": 148,
+  "imaging_fit_rows": [
+   {
+    "block": "clip",
+    "k": 30,
+    "fit_rows": 148
+   }
+  ],
+  "n_train": 148,
+  "n_eval": 148,
+  "X_train_shape": [
+   148,
+   35
+  ],
+  "X_eval_shape": [
+   148,
+   35
+  ],
+  "W_used": true,
+  "discrete_treatment": true,
+  "elapsed_s": 2.24
+ },
+ "fold2|Clin + RAD-DINO": {
+  "clin_scaler_fit_rows": 148,
+  "imaging_fit_rows": [
+   {
+    "block": "dino",
+    "k": 30,
+    "fit_rows": 148
+   }
+  ],
+  "n_train": 148,
+  "n_eval": 148,
+  "X_train_shape": [
+   148,
+   35
+  ],
+  "X_eval_shape": [
+   148,
+   35
+  ],
+  "W_used": true,
+  "discrete_treatment": true,
+  "elapsed_s": 2.2
+ },
+ "fold2|Clin + Rad + BiomedCLIP": {
+  "clin_scaler_fit_rows": 148,
+  "imaging_fit_rows": [
+   {
+    "block": "rad",
+    "k": 20,
+    "fit_rows": 148
+   },
+   {
+    "block": "clip",
+    "k": 30,
+    "fit_rows": 148
+   }
+  ],
+  "n_train": 148,
+  "n_eval": 148,
+  "X_train_shape": [
+   148,
+   55
+  ],
+  "X_eval_shape": [
+   148,
+   55
+  ],
+  "W_used": true,
+  "discrete_treatment": true,
+  "elapsed_s": 2.27
+ },
+ "fold2|Clin + Rad + RAD-DINO": {
+  "clin_scaler_fit_rows": 148,
+  "imaging_fit_rows": [
+   {
+    "block": "rad",
+    "k": 20,
+    "fit_rows": 148
+   },
+   {
+    "block": "dino",
+    "k": 30,
+    "fit_rows": 148
+   }
+  ],
+  "n_train": 148,
+  "n_eval": 148,
+  "X_train_shape": [
+   148,
+   55
+  ],
+  "X_eval_shape": [
+   148,
+   55
+  ],
+  "W_used": true,
+  "discrete_treatment": true,
+  "elapsed_s": 2.28
+ },
+ "fold3|Clinical only": {
+  "clin_scaler_fit_rows": 296,
+  "imaging_fit_rows": [],
+  "n_train": 296,
+  "n_eval": 148,
+  "X_train_shape": [
+   296,
+   5
+  ],
+  "X_eval_shape": [
+   148,
+   5
+  ],
+  "W_used": true,
+  "discrete_treatment": true,
+  "elapsed_s": 2.12
+ },
+ "fold3|Clin + Radiomics": {
+  "clin_scaler_fit_rows": 296,
+  "imaging_fit_rows": [
+   {
+    "block": "rad",
+    "k": 20,
+    "fit_rows": 296
+   }
+  ],
+  "n_train": 296,
+  "n_eval": 148,
+  "X_train_shape": [
+   296,
+   25
+  ],
+  "X_eval_shape": [
+   148,
+   25
+  ],
+  "W_used": true,
+  "discrete_treatment": true,
+  "elapsed_s": 2.6
+ },
+ "fold3|Clin + BiomedCLIP": {
+  "clin_scaler_fit_rows": 296,
+  "imaging_fit_rows": [
+   {
+    "block": "clip",
+    "k": 30,
+    "fit_rows": 296
+   }
+  ],
+  "n_train": 296,
+  "n_eval": 148,
+  "X_train_shape": [
+   296,
+   35
+  ],
+  "X_eval_shape": [
+   148,
+   35
+  ],
+  "W_used": true,
+  "discrete_treatment": true,
+  "elapsed_s": 2.77
+ },
+ "fold3|Clin + RAD-DINO": {
+  "clin_scaler_fit_rows": 296,
+  "imaging_fit_rows": [
+   {
+    "block": "dino",
+    "k": 30,
+    "fit_rows": 296
+   }
+  ],
+  "n_train": 296,
+  "n_eval": 148,
+  "X_train_shape": [
+   296,
+   35
+  ],
+  "X_eval_shape": [
+   148,
+   35
+  ],
+  "W_used": true,
+  "discrete_treatment": true,
+  "elapsed_s": 2.78
+ },
+ "fold3|Clin + Rad + BiomedCLIP": {
+  "clin_scaler_fit_rows": 296,
+  "imaging_fit_rows": [
+   {
+    "block": "rad",
+    "k": 20,
+    "fit_rows": 296
+   },
+   {
+    "block": "clip",
+    "k": 30,
+    "fit_rows": 296
+   }
+  ],
+  "n_train": 296,
+  "n_eval": 148,
+  "X_train_shape": [
+   296,
+   55
+  ],
+  "X_eval_shape": [
+   148,
+   55
+  ],
+  "W_used": true,
+  "discrete_treatment": true,
+  "elapsed_s": 2.98
+ },
+ "fold3|Clin + Rad + RAD-DINO": {
+  "clin_scaler_fit_rows": 296,
+  "imaging_fit_rows": [
+   {
+    "block": "rad",
+    "k": 20,
+    "fit_rows": 296
+   },
+   {
+    "block": "dino",
+    "k": 30,
+    "fit_rows": 296
+   }
+  ],
+  "n_train": 296,
+  "n_eval": 148,
+  "X_train_shape": [
+   296,
+   55
+  ],
+  "X_eval_shape": [
+   148,
+   55
+  ],
+  "W_used": true,
+  "discrete_treatment": true,
+  "elapsed_s": 3.02
+ },
+ "fold4|Clinical only": {
+  "clin_scaler_fit_rows": 444,
+  "imaging_fit_rows": [],
+  "n_train": 444,
+  "n_eval": 148,
+  "X_train_shape": [
+   444,
+   5
+  ],
+  "X_eval_shape": [
+   148,
+   5
+  ],
+  "W_used": true,
+  "discrete_treatment": true,
+  "elapsed_s": 2.3
+ },
+ "fold4|Clin + Radiomics": {
+  "clin_scaler_fit_rows": 444,
+  "imaging_fit_rows": [
+   {
+    "block": "rad",
+    "k": 20,
+    "fit_rows": 444
+   }
+  ],
+  "n_train": 444,
+  "n_eval": 148,
+  "X_train_shape": [
+   444,
+   25
+  ],
+  "X_eval_shape": [
+   148,
+   25
+  ],
+  "W_used": true,
+  "discrete_treatment": true,
+  "elapsed_s": 3.08
+ },
+ "fold4|Clin + BiomedCLIP": {
+  "clin_scaler_fit_rows": 444,
+  "imaging_fit_rows": [
+   {
+    "block": "clip",
+    "k": 30,
+    "fit_rows": 444
+   }
+  ],
+  "n_train": 444,
+  "n_eval": 148,
+  "X_train_shape": [
+   444,
+   35
+  ],
+  "X_eval_shape": [
+   148,
+   35
+  ],
+  "W_used": true,
+  "discrete_treatment": true,
+  "elapsed_s": 3.42
+ },
+ "fold4|Clin + RAD-DINO": {
+  "clin_scaler_fit_rows": 444,
+  "imaging_fit_rows": [
+   {
+    "block": "dino",
+    "k": 30,
+    "fit_rows": 444
+   }
+  ],
+  "n_train": 444,
+  "n_eval": 148,
+  "X_train_shape": [
+   444,
+   35
+  ],
+  "X_eval_shape": [
+   148,
+   35
+  ],
+  "W_used": true,
+  "discrete_treatment": true,
+  "elapsed_s": 3.41
+ },
+ "fold4|Clin + Rad + BiomedCLIP": {
+  "clin_scaler_fit_rows": 444,
+  "imaging_fit_rows": [
+   {
+    "block": "rad",
+    "k": 20,
+    "fit_rows": 444
+   },
+   {
+    "block": "clip",
+    "k": 30,
+    "fit_rows": 444
+   }
+  ],
+  "n_train": 444,
+  "n_eval": 148,
+  "X_train_shape": [
+   444,
+   55
+  ],
+  "X_eval_shape": [
+   148,
+   55
+  ],
+  "W_used": true,
+  "discrete_treatment": true,
+  "elapsed_s": 3.9
+ },
+ "fold4|Clin + Rad + RAD-DINO": {
+  "clin_scaler_fit_rows": 444,
+  "imaging_fit_rows": [
+   {
+    "block": "rad",
+    "k": 20,
+    "fit_rows": 444
+   },
+   {
+    "block": "dino",
+    "k": 30,
+    "fit_rows": 444
+   }
+  ],
+  "n_train": 444,
+  "n_eval": 148,
+  "X_train_shape": [
+   444,
+   55
+  ],
+  "X_eval_shape": [
+   148,
+   55
+  ],
+  "W_used": true,
+  "discrete_treatment": true,
+  "elapsed_s": 3.86
+ },
+ "fold5|Clinical only": {
+  "clin_scaler_fit_rows": 592,
+  "imaging_fit_rows": [],
+  "n_train": 592,
+  "n_eval": 147,
+  "X_train_shape": [
+   592,
+   5
+  ],
+  "X_eval_shape": [
+   147,
+   5
+  ],
+  "W_used": true,
+  "discrete_treatment": true,
+  "elapsed_s": 2.38
+ },
+ "fold5|Clin + Radiomics": {
+  "clin_scaler_fit_rows": 592,
+  "imaging_fit_rows": [
+   {
+    "block": "rad",
+    "k": 20,
+    "fit_rows": 592
+   }
+  ],
+  "n_train": 592,
+  "n_eval": 147,
+  "X_train_shape": [
+   592,
+   25
+  ],
+  "X_eval_shape": [
+   147,
+   25
+  ],
+  "W_used": true,
+  "discrete_treatment": true,
+  "elapsed_s": 3.6
+ },
+ "fold5|Clin + BiomedCLIP": {
+  "clin_scaler_fit_rows": 592,
+  "imaging_fit_rows": [
+   {
+    "block": "clip",
+    "k": 30,
+    "fit_rows": 592
+   }
+  ],
+  "n_train": 592,
+  "n_eval": 147,
+  "X_train_shape": [
+   592,
+   35
+  ],
+  "X_eval_shape": [
+   147,
+   35
+  ],
+  "W_used": true,
+  "discrete_treatment": true,
+  "elapsed_s": 4.12
+ },
+ "fold5|Clin + RAD-DINO": {
+  "clin_scaler_fit_rows": 592,
+  "imaging_fit_rows": [
+   {
+    "block": "dino",
+    "k": 30,
+    "fit_rows": 592
+   }
+  ],
+  "n_train": 592,
+  "n_eval": 147,
+  "X_train_shape": [
+   592,
+   35
+  ],
+  "X_eval_shape": [
+   147,
+   35
+  ],
+  "W_used": true,
+  "discrete_treatment": true,
+  "elapsed_s": 4.24
+ },
+ "fold5|Clin + Rad + BiomedCLIP": {
+  "clin_scaler_fit_rows": 592,
+  "imaging_fit_rows": [
+   {
+    "block": "rad",
+    "k": 20,
+    "fit_rows": 592
+   },
+   {
+    "block": "clip",
+    "k": 30,
+    "fit_rows": 592
+   }
+  ],
+  "n_train": 592,
+  "n_eval": 147,
+  "X_train_shape": [
+   592,
+   55
+  ],
+  "X_eval_shape": [
+   147,
+   55
+  ],
+  "W_used": true,
+  "discrete_treatment": true,
+  "elapsed_s": 4.81
+ },
+ "fold5|Clin + Rad + RAD-DINO": {
+  "clin_scaler_fit_rows": 592,
+  "imaging_fit_rows": [
+   {
+    "block": "rad",
+    "k": 20,
+    "fit_rows": 592
+   },
+   {
+    "block": "dino",
+    "k": 30,
+    "fit_rows": 592
+   }
+  ],
+  "n_train": 592,
+  "n_eval": 147,
+  "X_train_shape": [
+   592,
+   55
+  ],
+  "X_eval_shape": [
+   147,
+   55
+  ],
+  "W_used": true,
+  "discrete_treatment": true,
+  "elapsed_s": 4.82
+ }
+}

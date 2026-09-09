@@ -1,0 +1,81 @@
+{
+ "date": "2026-07-25",
+ "device": "mps",
+ "checkpoint": "hf-hub:microsoft/BiomedCLIP-PubMedBERT_256-vit_base_patch16_224",
+ "checkpoint_revision": "9f341de24bfb00180f1b847274256e9b65a3a32e",
+ "cohort_source": "explicit canonical ID lists (H7 fix)",
+ "cohorts": {
+  "her2neg": {
+   "n_canonical": 739,
+   "n_extracted": 739,
+   "n_failed": 0,
+   "failures": [],
+   "archive_shape": [
+    739,
+    513
+   ],
+   "reextract_shape": [
+    739,
+    513
+   ],
+   "dim": 512,
+   "dim_matches_archive": true,
+   "patient_id_set_identical": true,
+   "row_order_identical_to_archive": true,
+   "aligned_for_comparison": true,
+   "cosine_median": 1.0,
+   "cosine_min": 0.9999999999999998,
+   "cosine_mean": 1.0,
+   "cosine_below_0.9999": 0,
+   "cosine_below_0.99": 0,
+   "max_abs_elementwise_diff": 3.552713678800501e-15,
+   "median_abs_elementwise_diff": 0.0,
+   "pca30_spearman_min": 1.0,
+   "pca30_spearman_median": 1.0,
+   "pca30_components_below_0.99": 0,
+   "elapsed_s": 60.5,
+   "output": "biomedclip_her2neg_reextract_20260725.csv",
+   "PASS_median_cosine_ge_0.99999": true,
+   "PASS_min_cosine_ge_0.9999": true,
+   "PASS_maxabs_le_1e-4": true,
+   "PASS_pca_spearman_ge_0.99": true,
+   "VERDICT": "REPRODUCED"
+  },
+  "her2pos": {
+   "n_canonical": 241,
+   "n_extracted": 241,
+   "n_failed": 0,
+   "failures": [],
+   "archive_shape": [
+    241,
+    513
+   ],
+   "reextract_shape": [
+    241,
+    513
+   ],
+   "dim": 512,
+   "dim_matches_archive": true,
+   "patient_id_set_identical": true,
+   "row_order_identical_to_archive": true,
+   "aligned_for_comparison": true,
+   "cosine_median": 1.0,
+   "cosine_min": 0.9999999999999998,
+   "cosine_mean": 1.0,
+   "cosine_below_0.9999": 0,
+   "cosine_below_0.99": 0,
+   "max_abs_elementwise_diff": 3.552713678800501e-15,
+   "median_abs_elementwise_diff": 0.0,
+   "pca30_spearman_min": 1.0,
+   "pca30_spearman_median": 1.0,
+   "pca30_components_below_0.99": 0,
+   "elapsed_s": 20.1,
+   "output": "biomedclip_her2pos_reextract_20260725.csv",
+   "PASS_median_cosine_ge_0.99999": true,
+   "PASS_min_cosine_ge_0.9999": true,
+   "PASS_maxabs_le_1e-4": true,
+   "PASS_pca_spearman_ge_0.99": true,
+   "VERDICT": "REPRODUCED"
+  }
+ }
+}

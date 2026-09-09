@@ -1,0 +1,28 @@
+{
+ "split_50_50": {
+  "seed": 42,
+  "generator": "numpy.random.default_rng(42).permutation(739)",
+  "assignment": "first 370 permuted indices -> H1 (train); remaining 369 -> H2 (evaluation)"
+ },
+ "sequential_5fold_partition": {
+  "seed": 42,
+  "generator": "numpy.random.default_rng(42).permutation(739) split into 5 nearly equal folds (numpy.array_split)"
+ },
+ "prioritization_models": {
+  "PCA_random_state": 42,
+  "RandomForest_random_state": 42,
+  "CausalForestDML_random_state": 42
+ },
+ "grf_evaluation_forest": {
+  "seed": 42,
+  "num_trees": 2000
+ },
+ "grf_half_sample_bootstrap": {
+  "set_seed": 20260906,
+  "R": 2000
+ },
+ "econml_crosscheck": {
+  "calc_uplift_n_bootstrap": 200,
+  "note": "sign / ordering / gross-error cross-check only"
+ }
+}

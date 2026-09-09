@@ -1,0 +1,31 @@
+{
+ "date": "2026-07-25",
+ "pyradiomics": "3.1.1.dev111+g8ed579383",
+ "settings": {
+  "binCount": 64,
+  "normalize": false,
+  "resampledPixelSpacing": [
+   1.0,
+   1.0,
+   1.0
+  ],
+  "interpolator": "23",
+  "force2D": false,
+  "label": 1
+ },
+ "cohort_source": "explicit canonical ID lists (H7 fix)",
+ "shapes": {
+  "her2neg": [
+   739,
+   108
+  ],
+  "her2pos": [
+   241,
+   108
+  ]
+ },
+ "failures": {
+  "her2neg": [],
+  "her2pos": []
+ }
+}

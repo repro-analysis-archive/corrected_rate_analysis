@@ -1,0 +1,126 @@
+{
+  "design": {
+    "partition": "new Y-independent random 5-fold, seed 42",
+    "rule": "for k=2..5 fit on folds 1..k-1, evaluate on fold k; DR scores from a causal forest on fold k only",
+    "aggregation": "z = sum(t_k)/sqrt(K-1) with K=5; p = 2*pnorm(-|z|); Holm across six configurations",
+    "degenerate_fold_rule": "a fold whose fitted rule is constant contributes t_k = 0 with the sqrt(K-1) denominator retained (conservative); a secondary z_restricted divides by sqrt(number of non-degenerate folds) and is reported alongside, clearly labelled",
+    "scope": "Q1 heterogeneity sensitivity ONLY; never used for the Q2 paired difference",
+    "grf_version": "2.6.1",
+    "R": 2000,
+    "boot_seed": 20260906
+  },
+  "overlap_by_fold": {
+    "fold2": {
+      "n": 148,
+      "n_treated": 110,
+      "n_control": 38,
+      "W_hat_min": 0.6281075844653,
+      "W_hat_max": 0.8410928828445,
+      "prop_outside_0.05_0.95": 0
+    },
+    "fold3": {
+      "n": 148,
+      "n_treated": 122,
+      "n_control": 26,
+      "W_hat_min": 0.6843720740667,
+      "W_hat_max": 0.8905411698957,
+      "prop_outside_0.05_0.95": 0
+    },
+    "fold4": {
+      "n": 148,
+      "n_treated": 117,
+      "n_control": 31,
+      "W_hat_min": 0.710480038244,
+      "W_hat_max": 0.8649991364277,
+      "prop_outside_0.05_0.95": 0
+    },
+    "fold5": {
+      "n": 147,
+      "n_treated": 105,
+      "n_control": 42,
+      "W_hat_min": 0.6024251231349,
+      "W_hat_max": 0.8361254649892,
+      "prop_outside_0.05_0.95": 0
+    }
+  },
+  "results": {
+    "Clinical only": {
+      "fold_estimates": [0, 0.09723716894296, 0.09546486524446, 0.07274288695367],
+      "fold_se": [0, 0.09341047751818, 0.06378264723428, 0.07520849780807],
+      "fold_t": [0, 1.040966404695, 1.496721590965, 0.9672163262628],
+      "fold_degenerate": [true, false, false, false],
+      "n_nondegenerate_folds": 3,
+      "z": 1.752452160962,
+      "p": 0.0796960889956,
+      "p_holm": 0.3187843559824,
+      "z_restricted": 2.023557453746,
+      "p_restricted": 0.04301570643272,
+      "p_holm_restricted": 0.1720628257309
+    },
+    "Clin + Radiomics": {
+      "fold_estimates": [0, -0.2225494065457, 0.0247414013836, 0.1076317544677],
+      "fold_se": [0, 0.1839586995719, 0.1003513609138, 0.06520973932053],
+      "fold_t": [0, -1.209779189914, 0.2465477414388, 1.650547227902],
+      "fold_degenerate": [true, false, false, false],
+      "n_nondegenerate_folds": 3,
+      "z": 0.3436578897133,
+      "p": 0.7311035834964,
+      "p_holm": 1,
+      "z_restricted": 0.3968219502702,
+      "p_restricted": 0.6914987629171,
+      "p_holm_restricted": 1
+    },
+    "Clin + BiomedCLIP": {
+      "fold_estimates": [0, 0.01584174764271, 0.1517608139467, 0.154710314758],
+      "fold_se": [0, 0.07896921984842, 0.07454002160183, 0.06233252940421],
+      "fold_t": [0, 0.2006066119574, 2.035964179852, 2.482015670417],
+      "fold_degenerate": [true, false, false, false],
+      "n_nondegenerate_folds": 3,
+      "z": 2.359293231114,
+      "p": 0.01830978134108,
+      "p_holm": 0.1098586880465,
+      "z_restricted": 2.724277164161,
+      "p_restricted": 0.006444240086273,
+      "p_holm_restricted": 0.03866544051764
+    },
+    "Clin + RAD-DINO": {
+      "fold_estimates": [0, -0.03499711444122, 0.0792199336868, -0.05206557965602],
+      "fold_se": [0, 0.1213029788175, 0.05810396242606, 0.08736606281442],
+      "fold_t": [0, -0.2885099342357, 1.363417061059, -0.5959474191554],
+      "fold_degenerate": [true, false, false, false],
+      "n_nondegenerate_folds": 3,
+      "z": 0.2394798538337,
+      "p": 0.8107335163489,
+      "p_holm": 1,
+      "z_restricted": 0.2765275161528,
+      "p_restricted": 0.7821429284191,
+      "p_holm_restricted": 1
+    },
+    "Clin + Rad + BiomedCLIP": {
+      "fold_estimates": [0, 0.03237122075381, 0.06798853174596, 0.1628152567853],
+      "fold_se": [0, 0.0694003526919, 0.0977289501225, 0.05831947625369],
+      "fold_t": [0, 0.4664417326165, 0.6956846631499, 2.791781875356],
+      "fold_degenerate": [true, false, false, false],
+      "n_nondegenerate_folds": 3,
+      "z": 1.976954135561,
+      "p": 0.04804681472728,
+      "p_holm": 0.2402340736364,
+      "z_restricted": 2.282790004683,
+      "p_restricted": 0.02244274101921,
+      "p_holm_restricted": 0.112213705096
+    },
+    "Clin + Rad + RAD-DINO": {
+      "fold_estimates": [0, -0.2270515411149, 0.1387527008703, 0.07340778803579],
+      "fold_se": [0, 0.1837629627251, 0.05849330939701, 0.06679294340994],
+      "fold_t": [0, -1.235567481868, 2.372112337303, 1.099035081973],
+      "fold_degenerate": [true, false, false, false],
+      "n_nondegenerate_folds": 3,
+      "z": 1.117789968704,
+      "p": 0.263656706807,
+      "p_holm": 0.7909701204211,
+      "z_restricted": 1.290712678657,
+      "p_restricted": 0.196803326598,
+      "p_holm_restricted": 0.590409979794
+    }
+  }
+}

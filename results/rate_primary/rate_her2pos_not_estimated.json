@@ -1,0 +1,13 @@
+{
+ "cohort": "her2pos",
+ "n_total": 241,
+ "n_control_total": 31,
+ "n_train": 121,
+ "n_eval": 120,
+ "eval_treated": 104,
+ "eval_control": 16,
+ "train_treated": 106,
+ "train_control": 15,
+ "decision": "NOT ESTIMATED FOR INFERENCE",
+ "reason": "the independent 50/50 split leaves too few control patients in either half for a stable evaluation forest or a stable RATE; no CATE model was fitted and no p-value was produced for HER2-positive. Exploratory/descriptive status is unchanged (D53)."
+}

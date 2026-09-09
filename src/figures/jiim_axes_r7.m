@@ -1,0 +1,9 @@
+function jiim_axes_r7(ax, S)
+% Forest / dot-plot axes: box off, x axis only, ticks outward, faint x guides.
+% The y axis carries no scale, so its spine and ticks are suppressed rather than
+% drawn as decoration that could be mistaken for a zero reference.
+set(ax,'FontName','Arial','FontSize',S.ftick,'TickDir','out','Box','off', ...
+       'XColor',S.text,'YColor','none','LineWidth',0.9, ...
+       'XGrid','on','YGrid','off','GridColor',S.guide,'GridAlpha',S.gridA, ...
+       'GridLineStyle','-','Layer','bottom','TickLength',[0.008 0.008]);
+end

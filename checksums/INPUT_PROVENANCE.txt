@@ -1,0 +1,12 @@
+# Input provenance of the corrected analysis: sha256 of every frozen input consumed (record of 2026-09-06T07:14:51Z)
+# Public release: local absolute paths replaced by repository-relative labels; hashes unchanged.
+
+0d95c6affc72074d0c2c51a3fad2f2f007ac05eb8c207ef77416f43cdc131f1c  external_data/clinical_and_imaging_info.xlsx   [MAMA-MIA clinical file; obtain from the public dataset]
+b893a669f95ae1e92a346bbae23450fdb99fc6b899baad69b8679e0a42c99067  reproduction/splits/epoch_assignment.csv   [regenerate with src/rate_analysis/derive_epochs.py; the regenerated file reproduces this hash]
+16a2969f15994970974441800c3cd2d192619ff3bf645f9f1ed61b9a5e2e57de  external_data/features/radiomics_her2neg_binCount64_20260725.csv   [regenerate with src/features/r2b_radiomics_reextract.py]
+be2177b3ab00801a1be8aecd9450fa13456f1bb0439fc4f315db8263f6320df9  external_data/features/radiomics_her2pos_binCount64_20260725.csv   [regenerate with src/features/r2b_radiomics_reextract.py]
+141c77d6518e38fa84b92c4ad6d6f4d40fe93e79ba3321dcf6cf285a211c561e  external_data/features/raddino_her2neg_reextract_cls_usefast_20260725.csv   [regenerate with src/features/r2c_usefast_test.py]
+79dce87cb9bc0193fa05cfc83745c15edb1eabda9540aac9266a66324d87edd7  external_data/features/raddino_her2pos_reextract_cls_usefast_20260725.csv   [regenerate with src/features/r2c_usefast_test.py]
+5382a4ecc0c6681c7e1c33d9e4e2f0dd8c246d3b0178ecd28d178fab01129c31  external_data/features/biomedclip_her2neg_reextract_20260725.csv   [regenerate with src/features/r2a_biomedclip_reextract.py; byte-identical to the archived original]
+82967674696ef43f7009a8d1c2dfcdd44481366e8391f58e38e5c32e0351784c  external_data/features/biomedclip_her2pos_reextract_20260725.csv   [regenerate with src/features/r2a_biomedclip_reextract.py; byte-identical to the archived original]
+2a87198a75834c3f2bb846f3b23713242b25c7573a1d2b12a5c2f14f094014f9  src/rate_analysis/r4_stageA.py   [hash of the frozen original; the released copy differs only in path resolution, see docs/CODE_MODIFICATIONS.md]

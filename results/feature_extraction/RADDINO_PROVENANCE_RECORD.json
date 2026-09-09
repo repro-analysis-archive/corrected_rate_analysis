@@ -1,0 +1,70 @@
+{
+ "record": "RAD-DINO provenance specification [R1 pre-R3 \u00a7A]",
+ "date": "2026-07-25",
+ "model_repository": "microsoft/rad-dino",
+ "model_revision": "2ec9ca0e7a73c23aded999b844acd2f07c7e46b9",
+ "processor": "AutoImageProcessor.from_pretrained(..., use_fast=True) -> BitImageProcessorFast",
+ "use_fast": "PINNED TRUE \u2014 version-dependent default was the single point of failure",
+ "processor_revision": "2ec9ca0e7a73c23aded999b844acd2f07c7e46b9 (same repo revision)",
+ "library_versions": {
+  "transformers": "4.57.6",
+  "torch": "2.10.0"
+ },
+ "weight_files": [
+  {
+   "file": "model.safetensors",
+   "bytes": 346345912,
+   "sha256": "dbfb9f54459c38773505de64a6ab7807bdcb392610fe1e697166342e43fb91ae"
+  }
+ ],
+ "preprocessor_config_sha256": [
+  "c537fc995c30e2353f07253899618d60e9eae3d5f82473778602c007c6523b56"
+ ],
+ "model_class": "Dinov2Model",
+ "hidden_size": 768,
+ "pooling": "CLS token \u2014 last_hidden_state[:, 0, :]  (contemporaneous source annotation '# CLS token')",
+ "preprocessing": {
+  "slice": "argmax per-slice tumour area; middle slice if mask empty",
+  "intensity": "whole-slice min-max to uint8, eps 1e-8",
+  "channels": "greyscale replicated to 3",
+  "resize": "BitImageProcessorFast defaults: shortest_edge 518 + center_crop 518, bicubic, rescale 1/255, mean/std 0.5307/0.2583"
+ },
+ "device": "mps",
+ "output_dimension": 768,
+ "reproduction_metrics": {
+  "her2neg": {
+   "cosine_median": 1.0000000000000013,
+   "cosine_min": 1.0,
+   "cos_lt_0.9999": 0,
+   "cos_lt_0.99": 0,
+   "max_abs_diff": 4.440892098500626e-16,
+   "median_abs_diff": 0.0,
+   "rel_L2_max": 9.85905614423224e-17,
+   "rel_L2_median": 7.99659804350076e-17,
+   "verdict": "REPRODUCED",
+   "reason": "max abs diff <= 1e-12; mechanism identified and corrected",
+   "n": 739,
+   "elapsed_s": 113.4,
+   "rerun_identical": true,
+   "rerun_max_abs_diff": 0.0
+  },
+  "her2pos": {
+   "cosine_median": 1.0000000000000013,
+   "cosine_min": 1.0000000000000002,
+   "cos_lt_0.9999": 0,
+   "cos_lt_0.99": 0,
+   "max_abs_diff": 4.440892098500626e-16,
+   "median_abs_diff": 0.0,
+   "rel_L2_max": 9.571332657035082e-17,
+   "rel_L2_median": 8.068082285692904e-17,
+   "verdict": "REPRODUCED",
+   "reason": "max abs diff <= 1e-12; mechanism identified and corrected",
+   "n": 241,
+   "elapsed_s": 37.9,
+   "rerun_identical": true,
+   "rerun_max_abs_diff": 0.0
+  }
+ },
+ "verdict": "REPRODUCED \u2014 max abs diff 4.441e-16 <= 1e-12 (8.3a first row)",
+ "scope_note": "use_fast pinning applies to RAD-DINO ONLY. BiomedCLIP uses open_clip, not AutoImageProcessor."
+}

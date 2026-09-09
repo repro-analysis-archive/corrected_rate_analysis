@@ -1,0 +1,739 @@
+h2_row,configuration,priority
+1,Clinical + MammaPrint,0.1023854110661982
+2,Clinical + MammaPrint,0.05823708648470297
+3,Clinical + MammaPrint,0.01752662150135098
+4,Clinical + MammaPrint,0.11187152806475953
+5,Clinical + MammaPrint,0.0675514631902791
+6,Clinical + MammaPrint,0.05880614383738406
+7,Clinical + MammaPrint,0.07921137191738557
+8,Clinical + MammaPrint,0.06135097413671614
+9,Clinical + MammaPrint,0.11235727123357524
+10,Clinical + MammaPrint,0.08079613026902224
+11,Clinical + MammaPrint,0.05776718597291421
+12,Clinical + MammaPrint,0.03475435472594523
+13,Clinical + MammaPrint,0.12069574291868865
+14,Clinical + MammaPrint,0.10774898144471769
+15,Clinical + MammaPrint,0.02840901392057635
+16,Clinical + MammaPrint,0.08687155744804058
+17,Clinical + MammaPrint,0.11278824424958231
+18,Clinical + MammaPrint,0.11996884921023425
+19,Clinical + MammaPrint,0.0590788957419331
+20,Clinical + MammaPrint,0.08126924226754648
+21,Clinical + MammaPrint,0.06941424167407194
+22,Clinical + MammaPrint,0.08687155744804058
+23,Clinical + MammaPrint,0.11367894203525598
+24,Clinical + MammaPrint,0.09270080247665809
+25,Clinical + MammaPrint,0.06870973650938093
+26,Clinical + MammaPrint,0.06992398581062481
+27,Clinical + MammaPrint,0.09588860345301015
+28,Clinical + MammaPrint,0.056900485206799814
+29,Clinical + MammaPrint,0.12468732090340186
+30,Clinical + MammaPrint,0.07816379090712323
+31,Clinical + MammaPrint,0.0777268597195143
+32,Clinical + MammaPrint,0.02061831019990735
+33,Clinical + MammaPrint,0.026939298430529873
+34,Clinical + MammaPrint,0.07090651657307427
+35,Clinical + MammaPrint,0.02143494217646098
+36,Clinical + MammaPrint,0.08943104660156524
+37,Clinical + MammaPrint,0.06941424167407194
+38,Clinical + MammaPrint,0.055471357881052126
+39,Clinical + MammaPrint,0.08563564080747531
+40,Clinical + MammaPrint,0.06941424167407194
+41,Clinical + MammaPrint,0.02061831019990735
+42,Clinical + MammaPrint,0.08943104660156524
+43,Clinical + MammaPrint,0.02061831019990735
+44,Clinical + MammaPrint,0.09690954689121117
+45,Clinical + MammaPrint,0.05776718597291421
+46,Clinical + MammaPrint,0.02061831019990735
+47,Clinical + MammaPrint,0.02061831019990735
+48,Clinical + MammaPrint,0.1080357532778825
+49,Clinical + MammaPrint,0.02061831019990735
+50,Clinical + MammaPrint,0.07723499470187452
+51,Clinical + MammaPrint,0.08621249049571211
+52,Clinical + MammaPrint,0.09856598689862449
+53,Clinical + MammaPrint,0.02061831019990735
+54,Clinical + MammaPrint,0.01600065973073175
+55,Clinical + MammaPrint,0.0915494490855436
+56,Clinical + MammaPrint,0.09499999701761926
+57,Clinical + MammaPrint,0.06539218609210895
+58,Clinical + MammaPrint,0.02061831019990735
+59,Clinical + MammaPrint,0.05583615608535428
+60,Clinical + MammaPrint,0.06875974218627082
+61,Clinical + MammaPrint,0.05614252831762582
+62,Clinical + MammaPrint,0.0901319020830477
+63,Clinical + MammaPrint,0.107415970187665
+64,Clinical + MammaPrint,0.09393769658442332
+65,Clinical + MammaPrint,0.0925734867328662
+66,Clinical + MammaPrint,0.07877042862164066
+67,Clinical + MammaPrint,0.07271715180800793
+68,Clinical + MammaPrint,0.09052185426596243
+69,Clinical + MammaPrint,0.1086610327746306
+70,Clinical + MammaPrint,0.11753353278408675
+71,Clinical + MammaPrint,0.07730459417256923
+72,Clinical + MammaPrint,0.04417999364596229
+73,Clinical + MammaPrint,0.08350777679377974
+74,Clinical + MammaPrint,0.02897329788832384
+75,Clinical + MammaPrint,0.08943104660156524
+76,Clinical + MammaPrint,0.059819736793932356
+77,Clinical + MammaPrint,0.09779453449898083
+78,Clinical + MammaPrint,0.056309229348086076
+79,Clinical + MammaPrint,0.09222905334946631
+80,Clinical + MammaPrint,0.08943104660156524
+81,Clinical + MammaPrint,0.11844424282063286
+82,Clinical + MammaPrint,0.09195751880365664
+83,Clinical + MammaPrint,0.02837188497691648
+84,Clinical + MammaPrint,0.12495985777621066
+85,Clinical + MammaPrint,0.0675514631902791
+86,Clinical + MammaPrint,0.030739869867885752
+87,Clinical + MammaPrint,0.07978685359769602
+88,Clinical + MammaPrint,0.05583615608535428
+89,Clinical + MammaPrint,0.06941424167407194
+90,Clinical + MammaPrint,0.028939958364806652
+91,Clinical + MammaPrint,0.1052767120230355
+92,Clinical + MammaPrint,0.020212263374242395
+93,Clinical + MammaPrint,0.08556387030624439
+94,Clinical + MammaPrint,0.03131134811261631
+95,Clinical + MammaPrint,0.06503286246075977
+96,Clinical + MammaPrint,0.09239766173456496
+97,Clinical + MammaPrint,0.05583615608535428
+98,Clinical + MammaPrint,0.08439673040705956
+99,Clinical + MammaPrint,0.11837312664926912
+100,Clinical + MammaPrint,0.0959596500627512
+101,Clinical + MammaPrint,0.06870973650938093
+102,Clinical + MammaPrint,0.11151524439373826
+103,Clinical + MammaPrint,0.08607416974129867
+104,Clinical + MammaPrint,0.08159967959208482
+105,Clinical + MammaPrint,0.028112073258498526
+106,Clinical + MammaPrint,0.021008435925944993
+107,Clinical + MammaPrint,0.02061831019990735
+108,Clinical + MammaPrint,0.10550614251142355
+109,Clinical + MammaPrint,0.08075766636381276
+110,Clinical + MammaPrint,0.08687155744804058
+111,Clinical + MammaPrint,0.052811667148128294
+112,Clinical + MammaPrint,0.06992398581062481
+113,Clinical + MammaPrint,0.11092013573439129
+114,Clinical + MammaPrint,0.01872362581092986
+115,Clinical + MammaPrint,0.08672684892218231
+116,Clinical + MammaPrint,0.08539864664897527
+117,Clinical + MammaPrint,0.06941424167407194
+118,Clinical + MammaPrint,0.04341273825676563
+119,Clinical + MammaPrint,0.11913552015148073
+120,Clinical + MammaPrint,0.10249369237367081
+121,Clinical + MammaPrint,0.08771470633133054
+122,Clinical + MammaPrint,0.05276859435012252
+123,Clinical + MammaPrint,0.0925734867328662
+124,Clinical + MammaPrint,0.0894988569934454
+125,Clinical + MammaPrint,0.08871381743242847
+126,Clinical + MammaPrint,0.05823708648470297
+127,Clinical + MammaPrint,0.052811667148128294
+128,Clinical + MammaPrint,0.10778807018872569
+129,Clinical + MammaPrint,0.09682212984327426
+130,Clinical + MammaPrint,0.06694215574601452
+131,Clinical + MammaPrint,0.026553925292930238
+132,Clinical + MammaPrint,0.07083148997312291
+133,Clinical + MammaPrint,0.04170736530516949
+134,Clinical + MammaPrint,0.03144955754707447
+135,Clinical + MammaPrint,0.08436420109110222
+136,Clinical + MammaPrint,0.0925734867328662
+137,Clinical + MammaPrint,0.09234258107941401
+138,Clinical + MammaPrint,0.08784188323332956
+139,Clinical + MammaPrint,0.09784270583750124
+140,Clinical + MammaPrint,0.06406072762587121
+141,Clinical + MammaPrint,0.0690345927565987
+142,Clinical + MammaPrint,0.07170730969334779
+143,Clinical + MammaPrint,0.026939298430529873
+144,Clinical + MammaPrint,0.11198293297726923
+145,Clinical + MammaPrint,0.10954512108795728
+146,Clinical + MammaPrint,0.08282941702692936
+147,Clinical + MammaPrint,0.06790379156398627
+148,Clinical + MammaPrint,0.05776718597291421
+149,Clinical + MammaPrint,0.07035260463046418
+150,Clinical + MammaPrint,0.05823708648470297
+151,Clinical + MammaPrint,0.09332742826852923
+152,Clinical + MammaPrint,0.08867109564973734
+153,Clinical + MammaPrint,0.0312988112429124
+154,Clinical + MammaPrint,0.09294205447545338
+155,Clinical + MammaPrint,0.0670819186108849
+156,Clinical + MammaPrint,0.08477003908546546
+157,Clinical + MammaPrint,0.06803172544800705
+158,Clinical + MammaPrint,0.12083493466837333
+159,Clinical + MammaPrint,0.02061831019990735
+160,Clinical + MammaPrint,0.05823708648470297
+161,Clinical + MammaPrint,0.10728505588048773
+162,Clinical + MammaPrint,0.07734807967045731
+163,Clinical + MammaPrint,0.018319387097153087
+164,Clinical + MammaPrint,0.02061831019990735
+165,Clinical + MammaPrint,0.08943104660156524
+166,Clinical + MammaPrint,0.06941424167407194
+167,Clinical + MammaPrint,0.10144155689977136
+168,Clinical + MammaPrint,0.09294205447545338
+169,Clinical + MammaPrint,0.10665135826020358
+170,Clinical + MammaPrint,0.07364259912963207
+171,Clinical + MammaPrint,0.09270080247665809
+172,Clinical + MammaPrint,0.09019875947705927
+173,Clinical + MammaPrint,0.08539864664897527
+174,Clinical + MammaPrint,0.02061831019990735
+175,Clinical + MammaPrint,0.12495985777621066
+176,Clinical + MammaPrint,0.05300235627213385
+177,Clinical + MammaPrint,0.052811667148128294
+178,Clinical + MammaPrint,0.03763091771403333
+179,Clinical + MammaPrint,0.06734033605005532
+180,Clinical + MammaPrint,0.08793990509797418
+181,Clinical + MammaPrint,0.07882624599588615
+182,Clinical + MammaPrint,0.05493708673556282
+183,Clinical + MammaPrint,0.0915494490855436
+184,Clinical + MammaPrint,0.030739869867885752
+185,Clinical + MammaPrint,0.03763091771403333
+186,Clinical + MammaPrint,0.09411159118713543
+187,Clinical + MammaPrint,0.05823708648470297
+188,Clinical + MammaPrint,0.0675514631902791
+189,Clinical + MammaPrint,0.024103882249882528
+190,Clinical + MammaPrint,0.11805782268276158
+191,Clinical + MammaPrint,0.11092013573439129
+192,Clinical + MammaPrint,0.09270080247665809
+193,Clinical + MammaPrint,0.09270080247665809
+194,Clinical + MammaPrint,0.06941424167407194
+195,Clinical + MammaPrint,0.10706398734728513
+196,Clinical + MammaPrint,0.05493708673556282
+197,Clinical + MammaPrint,0.10885638980358951
+198,Clinical + MammaPrint,0.08943104660156524
+199,Clinical + MammaPrint,0.07723499470187452
+200,Clinical + MammaPrint,0.11913552015148073
+201,Clinical + MammaPrint,0.06941424167407194
+202,Clinical + MammaPrint,0.0706623772185137
+203,Clinical + MammaPrint,0.028939958364806652
+204,Clinical + MammaPrint,0.03947949657548696
+205,Clinical + MammaPrint,0.08038864320519246
+206,Clinical + MammaPrint,0.042321449269860645
+207,Clinical + MammaPrint,0.10695052121433032
+208,Clinical + MammaPrint,0.07955245041165927
+209,Clinical + MammaPrint,0.07337314674977898
+210,Clinical + MammaPrint,0.0920396891387037
+211,Clinical + MammaPrint,0.10992020200954858
+212,Clinical + MammaPrint,0.020603918236435242
+213,Clinical + MammaPrint,0.08731567021739178
+214,Clinical + MammaPrint,0.05823708648470297
+215,Clinical + MammaPrint,0.11271613528986987
+216,Clinical + MammaPrint,0.06993899395070978
+217,Clinical + MammaPrint,0.0716001886694337
+218,Clinical + MammaPrint,0.1104480330355758
+219,Clinical + MammaPrint,0.0654753341092549
+220,Clinical + MammaPrint,0.07877042862164066
+221,Clinical + MammaPrint,0.09128629413858663
+222,Clinical + MammaPrint,0.09653224064961391
+223,Clinical + MammaPrint,0.04814371563663733
+224,Clinical + MammaPrint,0.06941424167407194
+225,Clinical + MammaPrint,0.0895380138329861
+226,Clinical + MammaPrint,0.0977029621416728
+227,Clinical + MammaPrint,0.0590788957419331
+228,Clinical + MammaPrint,0.11151524439373826
+229,Clinical + MammaPrint,0.09103969118179625
+230,Clinical + MammaPrint,0.0716001886694337
+231,Clinical + MammaPrint,0.0675514631902791
+232,Clinical + MammaPrint,0.11624098186552292
+233,Clinical + MammaPrint,0.02061831019990735
+234,Clinical + MammaPrint,0.12495985777621066
+235,Clinical + MammaPrint,0.11913552015148073
+236,Clinical + MammaPrint,0.07189387179566627
+237,Clinical + MammaPrint,0.08527527613242904
+238,Clinical + MammaPrint,0.02061831019990735
+239,Clinical + MammaPrint,0.09851282883252092
+240,Clinical + MammaPrint,0.09355676745731441
+241,Clinical + MammaPrint,0.09470601301794647
+242,Clinical + MammaPrint,0.11157838059967445
+243,Clinical + MammaPrint,0.11790260962439413
+244,Clinical + MammaPrint,0.07723499470187452
+245,Clinical + MammaPrint,0.05367359608959324
+246,Clinical + MammaPrint,0.0977029621416728
+247,Clinical + MammaPrint,0.052811667148128294
+248,Clinical + MammaPrint,0.08943104660156524
+249,Clinical + MammaPrint,0.11755682881053833
+250,Clinical + MammaPrint,0.11913552015148073
+251,Clinical + MammaPrint,0.07877042862164066
+252,Clinical + MammaPrint,0.08088141554916077
+253,Clinical + MammaPrint,0.05823708648470297
+254,Clinical + MammaPrint,0.028033000473071223
+255,Clinical + MammaPrint,0.02975386405680704
+256,Clinical + MammaPrint,0.08396121932663964
+257,Clinical + MammaPrint,0.0977029621416728
+258,Clinical + MammaPrint,0.07978685359769602
+259,Clinical + MammaPrint,0.02061831019990735
+260,Clinical + MammaPrint,0.07032695450688822
+261,Clinical + MammaPrint,0.08687155744804058
+262,Clinical + MammaPrint,0.109712737724818
+263,Clinical + MammaPrint,0.052811667148128294
+264,Clinical + MammaPrint,0.020603918236435242
+265,Clinical + MammaPrint,0.11225033327453
+266,Clinical + MammaPrint,0.09884161337259606
+267,Clinical + MammaPrint,0.09270080247665809
+268,Clinical + MammaPrint,0.030739869867885752
+269,Clinical + MammaPrint,0.056309229348086076
+270,Clinical + MammaPrint,0.0977029621416728
+271,Clinical + MammaPrint,0.08556387030624439
+272,Clinical + MammaPrint,0.10235727495413101
+273,Clinical + MammaPrint,0.08673960105229342
+274,Clinical + MammaPrint,0.0465735758317673
+275,Clinical + MammaPrint,0.052811667148128294
+276,Clinical + MammaPrint,0.09083746672530872
+277,Clinical + MammaPrint,0.08477003908546546
+278,Clinical + MammaPrint,0.056309229348086076
+279,Clinical + MammaPrint,0.09221730298862611
+280,Clinical + MammaPrint,0.09947071632546983
+281,Clinical + MammaPrint,0.07032695450688822
+282,Clinical + MammaPrint,0.08996529668709669
+283,Clinical + MammaPrint,0.06941424167407194
+284,Clinical + MammaPrint,0.10706398734728513
+285,Clinical + MammaPrint,0.028033000473071223
+286,Clinical + MammaPrint,0.11132810401634101
+287,Clinical + MammaPrint,0.028729131788285914
+288,Clinical + MammaPrint,0.11271613528986987
+289,Clinical + MammaPrint,0.0977029621416728
+290,Clinical + MammaPrint,0.026553925292930238
+291,Clinical + MammaPrint,0.07019270393517094
+292,Clinical + MammaPrint,0.11913552015148073
+293,Clinical + MammaPrint,0.12069574291868865
+294,Clinical + MammaPrint,0.09207660788387716
+295,Clinical + MammaPrint,0.09504391979222847
+296,Clinical + MammaPrint,0.08017295967458625
+297,Clinical + MammaPrint,0.0590788957419331
+298,Clinical + MammaPrint,0.07816528660385348
+299,Clinical + MammaPrint,0.11151524439373826
+300,Clinical + MammaPrint,0.08541776435825829
+301,Clinical + MammaPrint,0.09900720844787704
+302,Clinical + MammaPrint,0.020212263374242395
+303,Clinical + MammaPrint,0.06522658032233843
+304,Clinical + MammaPrint,0.11237927324152133
+305,Clinical + MammaPrint,0.08943104660156524
+306,Clinical + MammaPrint,0.04029666256906754
+307,Clinical + MammaPrint,0.11913552015148073
+308,Clinical + MammaPrint,0.06144666377258473
+309,Clinical + MammaPrint,0.08477003908546546
+310,Clinical + MammaPrint,0.052811667148128294
+311,Clinical + MammaPrint,0.028939958364806652
+312,Clinical + MammaPrint,0.07845700502625082
+313,Clinical + MammaPrint,0.0649276228878952
+314,Clinical + MammaPrint,0.03495587554290485
+315,Clinical + MammaPrint,0.02061831019990735
+316,Clinical + MammaPrint,0.05776718597291421
+317,Clinical + MammaPrint,0.03475435472594523
+318,Clinical + MammaPrint,0.07955245041165927
+319,Clinical + MammaPrint,0.10944777418752535
+320,Clinical + MammaPrint,0.0821614486153282
+321,Clinical + MammaPrint,0.08477003908546546
+322,Clinical + MammaPrint,0.10992020200954858
+323,Clinical + MammaPrint,0.07723499470187452
+324,Clinical + MammaPrint,0.12468732090340186
+325,Clinical + MammaPrint,0.05823708648470297
+326,Clinical + MammaPrint,0.10938246227645519
+327,Clinical + MammaPrint,0.11198293297726923
+328,Clinical + MammaPrint,0.08055745521055609
+329,Clinical + MammaPrint,0.07367295952505727
+330,Clinical + MammaPrint,0.07877042862164066
+331,Clinical + MammaPrint,0.05823708648470297
+332,Clinical + MammaPrint,0.04104172189108449
+333,Clinical + MammaPrint,0.09052185426596243
+334,Clinical + MammaPrint,0.09355676745731441
+335,Clinical + MammaPrint,0.07903588603096894
+336,Clinical + MammaPrint,0.11913552015148073
+337,Clinical + MammaPrint,0.05817803903260687
+338,Clinical + MammaPrint,0.11837312664926912
+339,Clinical + MammaPrint,0.10249369237367081
+340,Clinical + MammaPrint,0.08079176949341574
+341,Clinical + MammaPrint,0.06941424167407194
+342,Clinical + MammaPrint,0.11169518958407296
+343,Clinical + MammaPrint,0.08871381743242847
+344,Clinical + MammaPrint,0.08943104660156524
+345,Clinical + MammaPrint,0.0933395839798019
+346,Clinical + MammaPrint,0.028939958364806652
+347,Clinical + MammaPrint,0.07019270393517094
+348,Clinical + MammaPrint,0.09856598689862449
+349,Clinical + MammaPrint,0.11913552015148073
+350,Clinical + MammaPrint,0.06941424167407194
+351,Clinical + MammaPrint,0.01752662150135098
+352,Clinical + MammaPrint,0.11619065220622823
+353,Clinical + MammaPrint,0.08159967959208482
+354,Clinical + MammaPrint,0.09128629413858663
+355,Clinical + MammaPrint,0.1184407384825236
+356,Clinical + MammaPrint,0.09675538410711833
+357,Clinical + MammaPrint,0.10888093469185393
+358,Clinical + MammaPrint,0.11167874464759801
+359,Clinical + MammaPrint,0.07978685359769602
+360,Clinical + MammaPrint,0.09270080247665809
+361,Clinical + MammaPrint,0.01752662150135098
+362,Clinical + MammaPrint,0.024130865636747358
+363,Clinical + MammaPrint,0.03144955754707447
+364,Clinical + MammaPrint,0.0866468280924416
+365,Clinical + MammaPrint,0.0900856021832755
+366,Clinical + MammaPrint,0.08146771736428306
+367,Clinical + MammaPrint,0.07492977501777577
+368,Clinical + MammaPrint,0.06877762795361278
+369,Clinical + MammaPrint,0.07367295952505727
+1,Historical reference + MammaPrint,0.09426719427366165
+2,Historical reference + MammaPrint,0.0756412350073656
+3,Historical reference + MammaPrint,0.0732927906439778
+4,Historical reference + MammaPrint,0.0886940711704087
+5,Historical reference + MammaPrint,0.07247641882116208
+6,Historical reference + MammaPrint,0.0724041575182983
+7,Historical reference + MammaPrint,0.1030908997423254
+8,Historical reference + MammaPrint,0.07325716170786076
+9,Historical reference + MammaPrint,0.0795991315386261
+10,Historical reference + MammaPrint,0.08972025520085863
+11,Historical reference + MammaPrint,0.06717727823744639
+12,Historical reference + MammaPrint,0.0971259586886485
+13,Historical reference + MammaPrint,0.08650468345647483
+14,Historical reference + MammaPrint,0.08395619795014209
+15,Historical reference + MammaPrint,0.08492715268656544
+16,Historical reference + MammaPrint,0.09728502679117129
+17,Historical reference + MammaPrint,0.0845675064182015
+18,Historical reference + MammaPrint,0.09648746972347018
+19,Historical reference + MammaPrint,0.09516445553638836
+20,Historical reference + MammaPrint,0.1000998823294948
+21,Historical reference + MammaPrint,0.08677661285530536
+22,Historical reference + MammaPrint,0.08056511419116444
+23,Historical reference + MammaPrint,0.10210534939356142
+24,Historical reference + MammaPrint,0.09536004111657476
+25,Historical reference + MammaPrint,0.09851093575877141
+26,Historical reference + MammaPrint,0.08218099712308106
+27,Historical reference + MammaPrint,0.0654255723562951
+28,Historical reference + MammaPrint,0.11156279217795619
+29,Historical reference + MammaPrint,0.09782129078584187
+30,Historical reference + MammaPrint,0.06608277133688652
+31,Historical reference + MammaPrint,0.08377270365152135
+32,Historical reference + MammaPrint,0.0603826795817687
+33,Historical reference + MammaPrint,0.07626546095638227
+34,Historical reference + MammaPrint,0.08941302167363617
+35,Historical reference + MammaPrint,0.08283244915187313
+36,Historical reference + MammaPrint,0.08740024514475765
+37,Historical reference + MammaPrint,0.09282765757389225
+38,Historical reference + MammaPrint,0.08382351947914086
+39,Historical reference + MammaPrint,0.09321309818078109
+40,Historical reference + MammaPrint,0.08120587996110243
+41,Historical reference + MammaPrint,0.07619568069561893
+42,Historical reference + MammaPrint,0.0716324643478602
+43,Historical reference + MammaPrint,0.09551600319401715
+44,Historical reference + MammaPrint,0.10883577323639966
+45,Historical reference + MammaPrint,0.08389486597753641
+46,Historical reference + MammaPrint,0.07992962168051805
+47,Historical reference + MammaPrint,0.09055829514465151
+48,Historical reference + MammaPrint,0.10755135021963864
+49,Historical reference + MammaPrint,0.06165415855541982
+50,Historical reference + MammaPrint,0.11035310900549046
+51,Historical reference + MammaPrint,0.06612200412583792
+52,Historical reference + MammaPrint,0.06463169165919037
+53,Historical reference + MammaPrint,0.08277085669764397
+54,Historical reference + MammaPrint,0.10165231532451467
+55,Historical reference + MammaPrint,0.07101338047938227
+56,Historical reference + MammaPrint,0.09580828410602672
+57,Historical reference + MammaPrint,0.07636760945670908
+58,Historical reference + MammaPrint,0.0749986545329974
+59,Historical reference + MammaPrint,0.0814129218072331
+60,Historical reference + MammaPrint,0.05445478144204722
+61,Historical reference + MammaPrint,0.09351890088103894
+62,Historical reference + MammaPrint,0.09991968651569443
+63,Historical reference + MammaPrint,0.09524876809925104
+64,Historical reference + MammaPrint,0.05869925974658595
+65,Historical reference + MammaPrint,0.08969372502247411
+66,Historical reference + MammaPrint,0.07089437857998519
+67,Historical reference + MammaPrint,0.06588369173929107
+68,Historical reference + MammaPrint,0.07364442568253107
+69,Historical reference + MammaPrint,0.07865642129526018
+70,Historical reference + MammaPrint,0.08360719307151364
+71,Historical reference + MammaPrint,0.07573382575580163
+72,Historical reference + MammaPrint,0.08926229328648608
+73,Historical reference + MammaPrint,0.08061302531905029
+74,Historical reference + MammaPrint,0.07547971809602985
+75,Historical reference + MammaPrint,0.09401719258235906
+76,Historical reference + MammaPrint,0.08819388344318457
+77,Historical reference + MammaPrint,0.11864308459446118
+78,Historical reference + MammaPrint,0.05452711907836447
+79,Historical reference + MammaPrint,0.0856274223054816
+80,Historical reference + MammaPrint,0.11506529365771125
+81,Historical reference + MammaPrint,0.0943885313000478
+82,Historical reference + MammaPrint,0.11268038747764739
+83,Historical reference + MammaPrint,0.08081613007307728
+84,Historical reference + MammaPrint,0.06177890440105793
+85,Historical reference + MammaPrint,0.1150048606560481
+86,Historical reference + MammaPrint,0.056572583913513705
+87,Historical reference + MammaPrint,0.09167568048803781
+88,Historical reference + MammaPrint,0.0718326184952555
+89,Historical reference + MammaPrint,0.09806268274251294
+90,Historical reference + MammaPrint,0.09841548614215903
+91,Historical reference + MammaPrint,0.11339220592004418
+92,Historical reference + MammaPrint,0.11049152110207251
+93,Historical reference + MammaPrint,0.06781676958013742
+94,Historical reference + MammaPrint,0.08614629024406031
+95,Historical reference + MammaPrint,0.05730784116169027
+96,Historical reference + MammaPrint,0.11394854730605532
+97,Historical reference + MammaPrint,0.07971667747850117
+98,Historical reference + MammaPrint,0.0858264616877651
+99,Historical reference + MammaPrint,0.09938947829676253
+100,Historical reference + MammaPrint,0.09925768216678901
+101,Historical reference + MammaPrint,0.10685704212715127
+102,Historical reference + MammaPrint,0.06686931642683325
+103,Historical reference + MammaPrint,0.07545493166012072
+104,Historical reference + MammaPrint,0.0947925194506241
+105,Historical reference + MammaPrint,0.04864225292435052
+106,Historical reference + MammaPrint,0.06460002670942849
+107,Historical reference + MammaPrint,0.07501151517690716
+108,Historical reference + MammaPrint,0.09778423312077876
+109,Historical reference + MammaPrint,0.08563676596319417
+110,Historical reference + MammaPrint,0.10315070475805448
+111,Historical reference + MammaPrint,0.08015362173577276
+112,Historical reference + MammaPrint,0.08845960288544745
+113,Historical reference + MammaPrint,0.07917554132499893
+114,Historical reference + MammaPrint,0.07396504332299002
+115,Historical reference + MammaPrint,0.0834866248209372
+116,Historical reference + MammaPrint,0.08165813394701649
+117,Historical reference + MammaPrint,0.08627458709842185
+118,Historical reference + MammaPrint,0.07408827474762224
+119,Historical reference + MammaPrint,0.08724353389117323
+120,Historical reference + MammaPrint,0.0737093199862091
+121,Historical reference + MammaPrint,0.07079416867117452
+122,Historical reference + MammaPrint,0.09221392463868056
+123,Historical reference + MammaPrint,0.08478171950622501
+124,Historical reference + MammaPrint,0.08654604094228058
+125,Historical reference + MammaPrint,0.07454111095601353
+126,Historical reference + MammaPrint,0.09479495257224682
+127,Historical reference + MammaPrint,0.07267067100914867
+128,Historical reference + MammaPrint,0.08334404218215755
+129,Historical reference + MammaPrint,0.10490312216589111
+130,Historical reference + MammaPrint,0.09183349198677156
+131,Historical reference + MammaPrint,0.0780581421866346
+132,Historical reference + MammaPrint,0.06612588173888276
+133,Historical reference + MammaPrint,0.08728351843077543
+134,Historical reference + MammaPrint,0.09592920563234317
+135,Historical reference + MammaPrint,0.08901501184141057
+136,Historical reference + MammaPrint,0.07747720446986764
+137,Historical reference + MammaPrint,0.0838337380416522
+138,Historical reference + MammaPrint,0.09981935450162972
+139,Historical reference + MammaPrint,0.1097574015379066
+140,Historical reference + MammaPrint,0.08223950690495502
+141,Historical reference + MammaPrint,0.06236622191534281
+142,Historical reference + MammaPrint,0.08549278268837525
+143,Historical reference + MammaPrint,0.07656376324435635
+144,Historical reference + MammaPrint,0.07356267640529342
+145,Historical reference + MammaPrint,0.0806000843850155
+146,Historical reference + MammaPrint,0.08354084677717752
+147,Historical reference + MammaPrint,0.08191096689167983
+148,Historical reference + MammaPrint,0.10976520259297952
+149,Historical reference + MammaPrint,0.10693211940644108
+150,Historical reference + MammaPrint,0.07469996411704913
+151,Historical reference + MammaPrint,0.10203994695265067
+152,Historical reference + MammaPrint,0.07003708428906377
+153,Historical reference + MammaPrint,0.09106058198922623
+154,Historical reference + MammaPrint,0.09284197112390564
+155,Historical reference + MammaPrint,0.07807093166482157
+156,Historical reference + MammaPrint,0.10692592153582403
+157,Historical reference + MammaPrint,0.07003450592408104
+158,Historical reference + MammaPrint,0.05699652793130017
+159,Historical reference + MammaPrint,0.08044894461653011
+160,Historical reference + MammaPrint,0.06078432340888711
+161,Historical reference + MammaPrint,0.07596121070302816
+162,Historical reference + MammaPrint,0.0517815116649801
+163,Historical reference + MammaPrint,0.05712126120047455
+164,Historical reference + MammaPrint,0.06174761658395885
+165,Historical reference + MammaPrint,0.08590059141021109
+166,Historical reference + MammaPrint,0.05631203391133132
+167,Historical reference + MammaPrint,0.08288777856596959
+168,Historical reference + MammaPrint,0.09177883276468657
+169,Historical reference + MammaPrint,0.08762343309999424
+170,Historical reference + MammaPrint,0.08939337052670303
+171,Historical reference + MammaPrint,0.09390636174969641
+172,Historical reference + MammaPrint,0.10381453926238152
+173,Historical reference + MammaPrint,0.07581295270875214
+174,Historical reference + MammaPrint,0.10974994292156882
+175,Historical reference + MammaPrint,0.09119881590286519
+176,Historical reference + MammaPrint,0.09079559438874527
+177,Historical reference + MammaPrint,0.06400056141352563
+178,Historical reference + MammaPrint,0.08043099953703825
+179,Historical reference + MammaPrint,0.08528084223255811
+180,Historical reference + MammaPrint,0.10156695617275392
+181,Historical reference + MammaPrint,0.09668808814350766
+182,Historical reference + MammaPrint,0.07720329587090975
+183,Historical reference + MammaPrint,0.07981944147407435
+184,Historical reference + MammaPrint,0.06671812615986214
+185,Historical reference + MammaPrint,0.08140278882210354
+186,Historical reference + MammaPrint,0.0816296071586822
+187,Historical reference + MammaPrint,0.09746860377928024
+188,Historical reference + MammaPrint,0.08018405724645998
+189,Historical reference + MammaPrint,0.0714853703467665
+190,Historical reference + MammaPrint,0.07570588065398484
+191,Historical reference + MammaPrint,0.09674670217383449
+192,Historical reference + MammaPrint,0.061388277586550154
+193,Historical reference + MammaPrint,0.08834678183711984
+194,Historical reference + MammaPrint,0.08767384367338651
+195,Historical reference + MammaPrint,0.08726211145752298
+196,Historical reference + MammaPrint,0.07288490965742829
+197,Historical reference + MammaPrint,0.0919764114889697
+198,Historical reference + MammaPrint,0.06765630585501928
+199,Historical reference + MammaPrint,0.08900673942926293
+200,Historical reference + MammaPrint,0.08307049749976553
+201,Historical reference + MammaPrint,0.09537981409917357
+202,Historical reference + MammaPrint,0.08844867393585856
+203,Historical reference + MammaPrint,0.0988133212285233
+204,Historical reference + MammaPrint,0.0593330956101747
+205,Historical reference + MammaPrint,0.07999585465997391
+206,Historical reference + MammaPrint,0.07280026513380752
+207,Historical reference + MammaPrint,0.08664792517486027
+208,Historical reference + MammaPrint,0.07501492215316433
+209,Historical reference + MammaPrint,0.09833815692835145
+210,Historical reference + MammaPrint,0.08373304669349409
+211,Historical reference + MammaPrint,0.0973575532866202
+212,Historical reference + MammaPrint,0.08429398186205346
+213,Historical reference + MammaPrint,0.09608164074295725
+214,Historical reference + MammaPrint,0.0949075272889618
+215,Historical reference + MammaPrint,0.11102273368608341
+216,Historical reference + MammaPrint,0.09152511171285423
+217,Historical reference + MammaPrint,0.09674102168569827
+218,Historical reference + MammaPrint,0.06795861332170348
+219,Historical reference + MammaPrint,0.08194116089377308
+220,Historical reference + MammaPrint,0.08281501415926137
+221,Historical reference + MammaPrint,0.07960864693037874
+222,Historical reference + MammaPrint,0.0944552378361901
+223,Historical reference + MammaPrint,0.08574609230109154
+224,Historical reference + MammaPrint,0.07612711123422963
+225,Historical reference + MammaPrint,0.098583571670535
+226,Historical reference + MammaPrint,0.08533201368088789
+227,Historical reference + MammaPrint,0.09887632103357577
+228,Historical reference + MammaPrint,0.07387115208767157
+229,Historical reference + MammaPrint,0.10286301248932292
+230,Historical reference + MammaPrint,0.0790862256669207
+231,Historical reference + MammaPrint,0.051529741700405314
+232,Historical reference + MammaPrint,0.07964150190330517
+233,Historical reference + MammaPrint,0.07649259950020403
+234,Historical reference + MammaPrint,0.09454669200497101
+235,Historical reference + MammaPrint,0.08179560000741744
+236,Historical reference + MammaPrint,0.06805679434767666
+237,Historical reference + MammaPrint,0.09150337641114661
+238,Historical reference + MammaPrint,0.09425035923361243
+239,Historical reference + MammaPrint,0.10422264471500173
+240,Historical reference + MammaPrint,0.09592667965316969
+241,Historical reference + MammaPrint,0.06624740277891347
+242,Historical reference + MammaPrint,0.07283847178815021
+243,Historical reference + MammaPrint,0.0798058075190022
+244,Historical reference + MammaPrint,0.08078372944465116
+245,Historical reference + MammaPrint,0.11453809787987765
+246,Historical reference + MammaPrint,0.07754552863252201
+247,Historical reference + MammaPrint,0.08463725704828667
+248,Historical reference + MammaPrint,0.07214291108646205
+249,Historical reference + MammaPrint,0.09799567937553336
+250,Historical reference + MammaPrint,0.07115662535094622
+251,Historical reference + MammaPrint,0.07915065044274316
+252,Historical reference + MammaPrint,0.06407189763768756
+253,Historical reference + MammaPrint,0.06134331577239734
+254,Historical reference + MammaPrint,0.06501212375214177
+255,Historical reference + MammaPrint,0.08707825117321388
+256,Historical reference + MammaPrint,0.06959076671703841
+257,Historical reference + MammaPrint,0.08450741454263462
+258,Historical reference + MammaPrint,0.061506835184613244
+259,Historical reference + MammaPrint,0.06443099122851638
+260,Historical reference + MammaPrint,0.09818584633678594
+261,Historical reference + MammaPrint,0.0925784810691658
+262,Historical reference + MammaPrint,0.10107697673617502
+263,Historical reference + MammaPrint,0.049005080634192365
+264,Historical reference + MammaPrint,0.10688781490933916
+265,Historical reference + MammaPrint,0.0559849259529365
+266,Historical reference + MammaPrint,0.0969370966153512
+267,Historical reference + MammaPrint,0.09626689508675433
+268,Historical reference + MammaPrint,0.09212838484465607
+269,Historical reference + MammaPrint,0.07823772434079551
+270,Historical reference + MammaPrint,0.08806111068240946
+271,Historical reference + MammaPrint,0.08660298147084954
+272,Historical reference + MammaPrint,0.07458397235315431
+273,Historical reference + MammaPrint,0.05869432475168121
+274,Historical reference + MammaPrint,0.07927852785600287
+275,Historical reference + MammaPrint,0.08879922115370475
+276,Historical reference + MammaPrint,0.0802582224569556
+277,Historical reference + MammaPrint,0.08274484387426156
+278,Historical reference + MammaPrint,0.08541067766568333
+279,Historical reference + MammaPrint,0.08591659342891166
+280,Historical reference + MammaPrint,0.08078329574750956
+281,Historical reference + MammaPrint,0.08462800963983771
+282,Historical reference + MammaPrint,0.09389398253303698
+283,Historical reference + MammaPrint,0.07590719557366189
+284,Historical reference + MammaPrint,0.07682941423196485
+285,Historical reference + MammaPrint,0.06647871681159392
+286,Historical reference + MammaPrint,0.09142322039389356
+287,Historical reference + MammaPrint,0.09233840601464219
+288,Historical reference + MammaPrint,0.09141595969284286
+289,Historical reference + MammaPrint,0.07622022339618058
+290,Historical reference + MammaPrint,0.08347089143009516
+291,Historical reference + MammaPrint,0.09532635822200271
+292,Historical reference + MammaPrint,0.0896144837219095
+293,Historical reference + MammaPrint,0.06916945860709299
+294,Historical reference + MammaPrint,0.09228756708010988
+295,Historical reference + MammaPrint,0.09387852717953257
+296,Historical reference + MammaPrint,0.07597377239116296
+297,Historical reference + MammaPrint,0.0517136349088688
+298,Historical reference + MammaPrint,0.10754281650539319
+299,Historical reference + MammaPrint,0.08595251957058428
+300,Historical reference + MammaPrint,0.08154924706450968
+301,Historical reference + MammaPrint,0.08269356895611002
+302,Historical reference + MammaPrint,0.07635523963360043
+303,Historical reference + MammaPrint,0.0817056071408724
+304,Historical reference + MammaPrint,0.09315788228952233
+305,Historical reference + MammaPrint,0.09951574944563932
+306,Historical reference + MammaPrint,0.10379241622789062
+307,Historical reference + MammaPrint,0.04913679874794634
+308,Historical reference + MammaPrint,0.06749353375375101
+309,Historical reference + MammaPrint,0.09772004167857062
+310,Historical reference + MammaPrint,0.07193842152787448
+311,Historical reference + MammaPrint,0.05498472392779332
+312,Historical reference + MammaPrint,0.0444487390226161
+313,Historical reference + MammaPrint,0.06606425869246907
+314,Historical reference + MammaPrint,0.08827700101446774
+315,Historical reference + MammaPrint,0.07216704160918833
+316,Historical reference + MammaPrint,0.0746742520968643
+317,Historical reference + MammaPrint,0.08857473028643426
+318,Historical reference + MammaPrint,0.07776107901215272
+319,Historical reference + MammaPrint,0.09959526722063006
+320,Historical reference + MammaPrint,0.08084373109801912
+321,Historical reference + MammaPrint,0.08114421008774281
+322,Historical reference + MammaPrint,0.05714279582717127
+323,Historical reference + MammaPrint,0.09015891680196067
+324,Historical reference + MammaPrint,0.06932503794810714
+325,Historical reference + MammaPrint,0.0629176762166196
+326,Historical reference + MammaPrint,0.07313876629271578
+327,Historical reference + MammaPrint,0.07339335583979073
+328,Historical reference + MammaPrint,0.09621219045665824
+329,Historical reference + MammaPrint,0.0632910068650558
+330,Historical reference + MammaPrint,0.08079815056927037
+331,Historical reference + MammaPrint,0.06533686050918257
+332,Historical reference + MammaPrint,0.08590729934509278
+333,Historical reference + MammaPrint,0.07709134019776984
+334,Historical reference + MammaPrint,0.08651999983975718
+335,Historical reference + MammaPrint,0.09439314373067102
+336,Historical reference + MammaPrint,0.076405218906309
+337,Historical reference + MammaPrint,0.0756304092110863
+338,Historical reference + MammaPrint,0.09942964645029506
+339,Historical reference + MammaPrint,0.09120181544977102
+340,Historical reference + MammaPrint,0.0804640890573722
+341,Historical reference + MammaPrint,0.08954116853496479
+342,Historical reference + MammaPrint,0.08952895155597342
+343,Historical reference + MammaPrint,0.07540875037177996
+344,Historical reference + MammaPrint,0.07794347140536462
+345,Historical reference + MammaPrint,0.07935399677692677
+346,Historical reference + MammaPrint,0.10114472548429064
+347,Historical reference + MammaPrint,0.09568070952789919
+348,Historical reference + MammaPrint,0.04726335254049038
+349,Historical reference + MammaPrint,0.0866655092364472
+350,Historical reference + MammaPrint,0.09145261450269312
+351,Historical reference + MammaPrint,0.0637080280866534
+352,Historical reference + MammaPrint,0.077235228017065
+353,Historical reference + MammaPrint,0.07918521106819461
+354,Historical reference + MammaPrint,0.06490643725335614
+355,Historical reference + MammaPrint,0.08495699238636807
+356,Historical reference + MammaPrint,0.08057598312536421
+357,Historical reference + MammaPrint,0.07797206407246104
+358,Historical reference + MammaPrint,0.09195130048980171
+359,Historical reference + MammaPrint,0.09984380822781068
+360,Historical reference + MammaPrint,0.09435204589583333
+361,Historical reference + MammaPrint,0.09100992080279492
+362,Historical reference + MammaPrint,0.07488315916041424
+363,Historical reference + MammaPrint,0.10897355025692926
+364,Historical reference + MammaPrint,0.0789162960946126
+365,Historical reference + MammaPrint,0.08122346754572672
+366,Historical reference + MammaPrint,0.09792020692694518
+367,Historical reference + MammaPrint,0.060554804990309886
+368,Historical reference + MammaPrint,0.06962910945118425
+369,Historical reference + MammaPrint,0.07238942627414652

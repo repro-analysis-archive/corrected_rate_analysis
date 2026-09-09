@@ -1,0 +1,239 @@
+{
+ "date": "2026-07-25",
+ "binCount": 64,
+ "cohorts": {
+  "her2neg": {
+   "n_old": 739,
+   "n_new": 739,
+   "features_old": 107,
+   "features_new": 107,
+   "ids_aligned": true,
+   "collapse_OLD": {
+    "prop_abs_entropy_lt_1e-12": 0.40054127198917455,
+    "prop_entropy_exactly_0": 0.0,
+    "prop_jointenergy_eq_1": 0.40054127198917455,
+    "prop_uniformity_eq_1": 0.40054127198917455,
+    "prop_uniformity_gt_0.99": 0.8903924221921515,
+    "n_texture": 75,
+    "prop_texture_zero_variance": 0.0,
+    "prop_texture_near_zero_variance": 0.0
+   },
+   "collapse_NEW": {
+    "prop_abs_entropy_lt_1e-12": 0.0,
+    "prop_entropy_exactly_0": 0.0,
+    "prop_jointenergy_eq_1": 0.0,
+    "prop_uniformity_eq_1": 0.0,
+    "prop_uniformity_gt_0.99": 0.0,
+    "n_texture": 75,
+    "prop_texture_zero_variance": 0.0,
+    "prop_texture_near_zero_variance": 0.0
+   }
+  },
+  "her2pos": {
+   "n_old": 241,
+   "n_new": 241,
+   "features_old": 107,
+   "features_new": 107,
+   "ids_aligned": true,
+   "collapse_OLD": {
+    "prop_abs_entropy_lt_1e-12": 0.3900414937759336,
+    "prop_entropy_exactly_0": 0.0,
+    "prop_jointenergy_eq_1": 0.3900414937759336,
+    "prop_uniformity_eq_1": 0.3900414937759336,
+    "prop_uniformity_gt_0.99": 0.8630705394190872,
+    "n_texture": 75,
+    "prop_texture_zero_variance": 0.0,
+    "prop_texture_near_zero_variance": 0.0
+   },
+   "collapse_NEW": {
+    "prop_abs_entropy_lt_1e-12": 0.0,
+    "prop_entropy_exactly_0": 0.0,
+    "prop_jointenergy_eq_1": 0.0,
+    "prop_uniformity_eq_1": 0.0,
+    "prop_uniformity_gt_0.99": 0.0,
+    "n_texture": 75,
+    "prop_texture_zero_variance": 0.0,
+    "prop_texture_near_zero_variance": 0.0
+   }
+  }
+ },
+ "Q": {
+  "Q1": {
+   "metric": "median effective (non-empty) bins per tumour in [30,130]",
+   "measured": 63.0,
+   "threshold": "30 <= median <= 130",
+   "pass": true
+  },
+  "Q2": {
+   "metric": "proportion with effective bins in [16,256]",
+   "measured": 1.0,
+   "threshold": ">= 0.90",
+   "pass": true
+  },
+  "Q3": {
+   "metric": "proportion |first-order Entropy| < 1e-12",
+   "measured": 0.0,
+   "threshold": "<= 0.01",
+   "pass": true
+  },
+  "Q4": {
+   "metric": "proportion GLCM JointEnergy == 1.0",
+   "measured": 0.0,
+   "threshold": "<= 0.01",
+   "pass": true
+  },
+  "Q5": {
+   "metric": "proportion first-order Uniformity > 0.99",
+   "measured": 0.0,
+   "threshold": "<= 0.05",
+   "pass": true
+  },
+  "Q6": {
+   "metric": "zero/near-zero-variance texture features (share of 75)",
+   "measured": 0.0,
+   "threshold": "<= 0.05",
+   "pass": true
+  },
+  "Q7": {
+   "metric": "extraction failures + NaN + Inf",
+   "measured": 0,
+   "threshold": "== 0",
+   "pass": true
+  },
+  "Q8": {
+   "metric": "features with |rho| > 0.9 vs MeshVolume (disclosure only)",
+   "measured": 13,
+   "threshold": "disclosure only",
+   "pass": true,
+   "detail": {
+    "original_shape_LeastAxisLength": 0.9391,
+    "original_shape_MinorAxisLength": 0.9226,
+    "original_shape_SurfaceArea": 0.9425,
+    "original_shape_VoxelVolume": 1.0,
+    "original_gldm_DependenceNonUniformity": 0.9794,
+    "original_gldm_GrayLevelNonUniformity": 0.9858,
+    "original_glrlm_GrayLevelNonUniformity": 0.987,
+    "original_glrlm_RunLengthNonUniformity": 0.9988,
+    "original_glszm_GrayLevelNonUniformity": 0.9806,
+    "original_glszm_SizeZoneNonUniformity": 0.95,
+    "original_ngtdm_Busyness": 0.9502,
+    "original_ngtdm_Coarseness": 0.984,
+    "original_ngtdm_Strength": 0.9697
+   }
+  },
+  "Q9": {
+   "metric": "proportion of tumours with < 10 voxels per bin",
+   "measured": 0.0010204081632653062,
+   "threshold": "<= 0.05",
+   "pass": true
+  }
+ },
+ "outcome_blinded": true,
+ "n_features_common": 107,
+ "features_only_old": [],
+ "features_only_new": [],
+ "collapse_pooled": {
+  "OLD": {
+   "prop_abs_entropy_lt_1e-12": 0.3979591836734694,
+   "prop_entropy_exactly_0": 0.0,
+   "prop_jointenergy_eq_1": 0.3979591836734694,
+   "prop_uniformity_eq_1": 0.3979591836734694,
+   "prop_uniformity_gt_0.99": 0.8836734693877552,
+   "n_texture": 75,
+   "prop_texture_zero_variance": 0.0,
+   "prop_texture_near_zero_variance": 0.0
+  },
+  "NEW": {
+   "prop_abs_entropy_lt_1e-12": 0.0,
+   "prop_entropy_exactly_0": 0.0,
+   "prop_jointenergy_eq_1": 0.0,
+   "prop_uniformity_eq_1": 0.0,
+   "prop_uniformity_gt_0.99": 0.0,
+   "n_texture": 75,
+   "prop_texture_zero_variance": 0.0,
+   "prop_texture_near_zero_variance": 0.0
+  }
+ },
+ "G1_VERDICT": "PASS",
+ "G1_failures": [],
+ "per_family": {
+  "shape": {
+   "n_features": 14,
+   "n_rho_computable": 14,
+   "rho_median": 0.9986634788677985,
+   "rho_min": 0.9892496466870242,
+   "n_rho_below_0.5": 0,
+   "n_rho_below_0.9": 0,
+   "n_materially_changed_rho_lt_0.9": 0,
+   "n_rho_nan_degenerate_old": 0
+  },
+  "firstorder": {
+   "n_features": 18,
+   "n_rho_computable": 18,
+   "rho_median": 0.23745953241911014,
+   "rho_min": -0.22312508570028988,
+   "n_rho_below_0.5": 15,
+   "n_rho_below_0.9": 16,
+   "n_materially_changed_rho_lt_0.9": 16,
+   "n_rho_nan_degenerate_old": 0
+  },
+  "glcm": {
+   "n_features": 24,
+   "n_rho_computable": 24,
+   "rho_median": -0.09477773548847289,
+   "rho_min": -0.17029582324229894,
+   "n_rho_below_0.5": 24,
+   "n_rho_below_0.9": 24,
+   "n_materially_changed_rho_lt_0.9": 24,
+   "n_rho_nan_degenerate_old": 0
+  },
+  "glrlm": {
+   "n_features": 16,
+   "n_rho_computable": 16,
+   "rho_median": 0.17687249983756814,
+   "rho_min": -0.26254522912893913,
+   "n_rho_below_0.5": 10,
+   "n_rho_below_0.9": 16,
+   "n_materially_changed_rho_lt_0.9": 16,
+   "n_rho_nan_degenerate_old": 0
+  },
+  "glszm": {
+   "n_features": 16,
+   "n_rho_computable": 16,
+   "rho_median": 0.2095250836838496,
+   "rho_min": -0.25444485699157127,
+   "n_rho_below_0.5": 14,
+   "n_rho_below_0.9": 16,
+   "n_materially_changed_rho_lt_0.9": 16,
+   "n_rho_nan_degenerate_old": 0
+  },
+  "ngtdm": {
+   "n_features": 5,
+   "n_rho_computable": 5,
+   "rho_median": -0.03839307833696066,
+   "rho_min": -0.19254247366866342,
+   "n_rho_below_0.5": 5,
+   "n_rho_below_0.9": 5,
+   "n_materially_changed_rho_lt_0.9": 5,
+   "n_rho_nan_degenerate_old": 0
+  },
+  "gldm": {
+   "n_features": 14,
+   "n_rho_computable": 14,
+   "rho_median": 0.06675274620489582,
+   "rho_min": -0.6527896664377439,
+   "n_rho_below_0.5": 7,
+   "n_rho_below_0.9": 13,
+   "n_materially_changed_rho_lt_0.9": 13,
+   "n_rho_nan_degenerate_old": 0
+  }
+ },
+ "overall_correlation": {
+  "n": 107,
+  "median": 0.1548041774366871,
+  "min": -0.6527896664377439,
+  "n_below_0.5": 75,
+  "n_below_0.9": 90,
+  "n_nan": 0
+ }
+}

@@ -1,0 +1,35 @@
+{
+ "empty_epochs": [
+  {
+   "epoch": 1,
+   "n": 2,
+   "ctrl": 2,
+   "exp": 0,
+   "n_arms": 0,
+   "first": "1998-06-11",
+   "last": "1998-06-18"
+  },
+  {
+   "epoch": 21,
+   "n": 9,
+   "ctrl": 9,
+   "exp": 0,
+   "n_arms": 0,
+   "first": "2003-11-23",
+   "last": "2004-01-02"
+  }
+ ],
+ "n_patients": 11,
+ "per_cohort": {
+  "her2neg": {
+   "n": 11,
+   "control": 11,
+   "experimental": 0
+  },
+  "her2pos": {
+   "n": 0,
+   "control": 0,
+   "experimental": 0
+  }
+ }
+}

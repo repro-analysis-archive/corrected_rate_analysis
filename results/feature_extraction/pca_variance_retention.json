@@ -1,0 +1,140 @@
+{
+ "date": "2026-07-25",
+ "seed": 42,
+ "n_outer_folds": 5,
+ "note": "T and Y used ONLY to construct the prespecified stratified folds; no outcome-dependent result computed or examined",
+ "results": {
+  "her2neg": {
+   "radiomics_CORRECTED": {
+    "n": 739,
+    "p_raw": 107,
+    "n_components": 20,
+    "per_fold_variance_retained": [
+     0.981442,
+     0.982358,
+     0.981156,
+     0.978569,
+     0.981102
+    ],
+    "median": 0.981156,
+    "min": 0.978569,
+    "max": 0.982358,
+    "full_data_reference": 0.980679
+   },
+   "radiomics_ORIGINAL": {
+    "n": 739,
+    "p_raw": 107,
+    "n_components": 20,
+    "per_fold_variance_retained": [
+     0.968685,
+     0.967482,
+     0.967854,
+     0.968678,
+     0.96798
+    ],
+    "median": 0.96798,
+    "min": 0.967482,
+    "max": 0.968685,
+    "full_data_reference": 0.967098
+   },
+   "BiomedCLIP": {
+    "n": 739,
+    "p_raw": 512,
+    "n_components": 30,
+    "per_fold_variance_retained": [
+     0.828527,
+     0.823061,
+     0.826189,
+     0.826744,
+     0.825029
+    ],
+    "median": 0.826189,
+    "min": 0.823061,
+    "max": 0.828527,
+    "full_data_reference": 0.822898
+   },
+   "RAD-DINO": {
+    "n": 739,
+    "p_raw": 768,
+    "n_components": 30,
+    "per_fold_variance_retained": [
+     0.773862,
+     0.773551,
+     0.773159,
+     0.77406,
+     0.774541
+    ],
+    "median": 0.773862,
+    "min": 0.773159,
+    "max": 0.774541,
+    "full_data_reference": 0.770658
+   }
+  },
+  "her2pos": {
+   "radiomics_CORRECTED": {
+    "n": 241,
+    "p_raw": 107,
+    "n_components": 20,
+    "per_fold_variance_retained": [
+     0.987578,
+     0.986246,
+     0.986719,
+     0.986541,
+     0.987255
+    ],
+    "median": 0.986719,
+    "min": 0.986246,
+    "max": 0.987578,
+    "full_data_reference": 0.985795
+   },
+   "radiomics_ORIGINAL": {
+    "n": 241,
+    "p_raw": 107,
+    "n_components": 20,
+    "per_fold_variance_retained": [
+     0.975076,
+     0.974646,
+     0.977051,
+     0.976183,
+     0.975396
+    ],
+    "median": 0.975396,
+    "min": 0.974646,
+    "max": 0.977051,
+    "full_data_reference": 0.973311
+   },
+   "BiomedCLIP": {
+    "n": 241,
+    "p_raw": 512,
+    "n_components": 30,
+    "per_fold_variance_retained": [
+     0.861438,
+     0.866135,
+     0.861402,
+     0.863544,
+     0.862964
+    ],
+    "median": 0.862964,
+    "min": 0.861402,
+    "max": 0.866135,
+    "full_data_reference": 0.854898
+   },
+   "RAD-DINO": {
+    "n": 241,
+    "p_raw": 768,
+    "n_components": 30,
+    "per_fold_variance_retained": [
+     0.80512,
+     0.804642,
+     0.802718,
+     0.809256,
+     0.808763
+    ],
+    "median": 0.80512,
+    "min": 0.802718,
+    "max": 0.809256,
+    "full_data_reference": 0.79609
+   }
+  }
+ }
+}

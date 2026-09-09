@@ -1,0 +1,118 @@
+{
+  "design": {
+    "question": "change in the standard RATE/AUTOC POINT ESTIMATE under same-sample versus independent evaluation",
+    "kind": "descriptive evaluation-induced-optimism diagnostic; NOT a test of treatment-effect heterogeneity",
+    "split": "frozen R7 50/50 split reused verbatim; H1 = R7 training half n=370, H2 = R7 evaluation half n=369",
+    "H2_dr": "FROZEN_R7/dr_scores_primary_heldout.csv reused byte-for-byte",
+    "H1_dr": "new common vector, same locked spec: causal_forest(X=Z_H1 imaging-free, Y, W=T, 2000 trees, seed 42), get_scores()",
+    "pooled": "(370*optimism_H1 + 369*optimism_H2)/739, predeclared in AMENDMENT_R7_Q3.md section 5",
+    "uncertainty": "grf half-sample bootstrap SE retained for the HONEST A rates only (R=2000, seed 20260906); NO SE, CI or p-value for C, for C-A, or for pooled optimism",
+    "grf_version": "2.6.1"
+  },
+  "overlap_H1": {
+    "n": 370,
+    "W_hat_min": 0.5861057849898,
+    "W_hat_max": 0.8585711667365,
+    "prop_outside_0.05_0.95": 0,
+    "prop_outside_0.01_0.99": 0
+  },
+  "run_check": {
+    "max_abs_diff_A_H2_vs_frozen_R7": 3.380629109984e-14,
+    "passed": true
+  },
+  "n_H1": 370,
+  "n_H2": 369,
+  "results": {
+    "Clinical only": {
+      "A_H1": 0.05144275687004,
+      "A_H1_se_heldout": 0.05293995921168,
+      "C_H1": 0.09654009323836,
+      "optimism_H1": 0.04509733636831,
+      "A_H2": -0.0667886450684,
+      "A_H2_se_heldout": 0.05424888293195,
+      "C_H2": 0.2024238471105,
+      "optimism_H2": 0.2692124921789,
+      "pooled_optimism": 0.1570032802034,
+      "frozen_R7_A_H2": -0.0667886450684,
+      "abs_diff_vs_frozen_R7": 4.260480856999e-15,
+      "both_halves_positive": true
+    },
+    "Clin + Radiomics": {
+      "A_H1": 0.1098372706559,
+      "A_H1_se_heldout": 0.04548257365287,
+      "C_H1": 0.2269821754727,
+      "optimism_H1": 0.1171449048168,
+      "A_H2": -0.04538596175262,
+      "A_H2_se_heldout": 0.05600145599637,
+      "C_H2": 0.2578421598662,
+      "optimism_H2": 0.3032281216188,
+      "pooled_optimism": 0.2100606111767,
+      "frozen_R7_A_H2": -0.04538596175262,
+      "abs_diff_vs_frozen_R7": 1.956768080902e-15,
+      "both_halves_positive": true
+    },
+    "Clin + BiomedCLIP": {
+      "A_H1": 0.09840774843939,
+      "A_H1_se_heldout": 0.0447256957785,
+      "C_H1": 0.2701845057285,
+      "optimism_H1": 0.1717767572891,
+      "A_H2": 0.09753156640379,
+      "A_H2_se_heldout": 0.04068364222704,
+      "C_H2": 0.2948940417254,
+      "optimism_H2": 0.1973624753216,
+      "pooled_optimism": 0.1845523052647,
+      "frozen_R7_A_H2": 0.09753156640379,
+      "abs_diff_vs_frozen_R7": 2.317590563905e-15,
+      "both_halves_positive": true
+    },
+    "Clin + RAD-DINO": {
+      "A_H1": 0.05688600558897,
+      "A_H1_se_heldout": 0.04873978786492,
+      "C_H1": 0.2126688844331,
+      "optimism_H1": 0.1557828788442,
+      "A_H2": -0.1087919034928,
+      "A_H2_se_heldout": 0.05565729201591,
+      "C_H2": 0.2941045358183,
+      "optimism_H2": 0.4028964393112,
+      "pooled_optimism": 0.2791724645171,
+      "frozen_R7_A_H2": -0.1087919034928,
+      "abs_diff_vs_frozen_R7": 3.380629109984e-14,
+      "both_halves_positive": true
+    },
+    "Clin + Rad + BiomedCLIP": {
+      "A_H1": 0.1023479215266,
+      "A_H1_se_heldout": 0.04474577704372,
+      "C_H1": 0.3057914621755,
+      "optimism_H1": 0.2034435406489,
+      "A_H2": 0.0463733644309,
+      "A_H2_se_heldout": 0.04124640224482,
+      "C_H2": 0.2971248937978,
+      "optimism_H2": 0.2507515293669,
+      "pooled_optimism": 0.2270655268965,
+      "frozen_R7_A_H2": 0.0463733644309,
+      "abs_diff_vs_frozen_R7": 1.797173521112e-15,
+      "both_halves_positive": true
+    },
+    "Clin + Rad + RAD-DINO": {
+      "A_H1": 0.1062138029046,
+      "A_H1_se_heldout": 0.04380542100991,
+      "C_H1": 0.2600711153806,
+      "optimism_H1": 0.153857312476,
+      "A_H2": -0.0591195629029,
+      "A_H2_se_heldout": 0.06103025448438,
+      "C_H2": 0.2774179796913,
+      "optimism_H2": 0.3365375425942,
+      "pooled_optimism": 0.2450738279207,
+      "frozen_R7_A_H2": -0.05911956290289,
+      "abs_diff_vs_frozen_R7": 5.301314942585e-15,
+      "both_halves_positive": true
+    }
+  },
+  "summary": {
+    "pooled_min": 0.1570032802034,
+    "pooled_max": 0.2791724645171,
+    "n_pooled_gt_0": 6,
+    "n_configs": 6,
+    "n_both_halves_positive": 6
+  }
+}

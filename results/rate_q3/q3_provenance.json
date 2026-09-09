@@ -1,0 +1,254 @@
+{
+ "Z_H1": {
+  "n": 370,
+  "n_cols": 43,
+  "age_median_used": 48.0,
+  "n_age_imputed": 0,
+  "epoch_levels_absent_in_this_set": [
+   13
+  ],
+  "columns": [
+   "age_missing",
+   "age",
+   "hr",
+   "mammaprint",
+   "eth__african_american",
+   "eth__american_indian_alaskan_native",
+   "eth__asian",
+   "eth__caucasian",
+   "eth__hawaiian_pacific_islander",
+   "eth__multiple_race",
+   "eth__unknown",
+   "bmi__normal",
+   "bmi__obesity_class_1",
+   "bmi__obesity_class_2",
+   "bmi__obesity_class_3",
+   "bmi__overweight",
+   "bmi__underweight",
+   "bmi__unknown",
+   "meno__other",
+   "meno__peri",
+   "meno__post",
+   "meno__pre",
+   "ep__1",
+   "ep__2",
+   "ep__3",
+   "ep__4",
+   "ep__5",
+   "ep__6",
+   "ep__7",
+   "ep__8",
+   "ep__9",
+   "ep__10",
+   "ep__11",
+   "ep__12",
+   "ep__14",
+   "ep__15",
+   "ep__16",
+   "ep__17",
+   "ep__18",
+   "ep__19",
+   "ep__20",
+   "ep__21",
+   "ep__22"
+  ],
+  "excluded_by_design": [
+   "tumor_subtype (collinear with hr)",
+   "her2 (constant)",
+   "radiomics",
+   "BiomedCLIP",
+   "RAD-DINO"
+  ],
+  "menopause_pre_variants_merged": true
+ },
+ "priorities": {
+  "C_H2|Clinical only": {
+   "clin_scaler_fit_rows": 369,
+   "imaging_fit_rows": [],
+   "regime": "apparent",
+   "half": "H2",
+   "n": 369,
+   "elapsed_s": 2.19
+  },
+  "A_H1|Clinical only": {
+   "clin_scaler_fit_rows": 369,
+   "imaging_fit_rows": [],
+   "regime": "honest",
+   "half": "H1",
+   "fit_half": "H2",
+   "n": 370,
+   "elapsed_s": 2.18
+  },
+  "C_H1|Clinical only": {
+   "clin_scaler_fit_rows": 370,
+   "imaging_fit_rows": [],
+   "regime": "apparent",
+   "half": "H1",
+   "n": 370,
+   "elapsed_s": 2.23
+  },
+  "C_H2|Clin + Radiomics": {
+   "clin_scaler_fit_rows": 369,
+   "imaging_fit_rows": [
+    369
+   ],
+   "regime": "apparent",
+   "half": "H2",
+   "n": 369,
+   "elapsed_s": 2.79
+  },
+  "A_H1|Clin + Radiomics": {
+   "clin_scaler_fit_rows": 369,
+   "imaging_fit_rows": [
+    369
+   ],
+   "regime": "honest",
+   "half": "H1",
+   "fit_half": "H2",
+   "n": 370,
+   "elapsed_s": 2.8
+  },
+  "C_H1|Clin + Radiomics": {
+   "clin_scaler_fit_rows": 370,
+   "imaging_fit_rows": [
+    370
+   ],
+   "regime": "apparent",
+   "half": "H1",
+   "n": 370,
+   "elapsed_s": 2.82
+  },
+  "C_H2|Clin + BiomedCLIP": {
+   "clin_scaler_fit_rows": 369,
+   "imaging_fit_rows": [
+    369
+   ],
+   "regime": "apparent",
+   "half": "H2",
+   "n": 369,
+   "elapsed_s": 3.11
+  },
+  "A_H1|Clin + BiomedCLIP": {
+   "clin_scaler_fit_rows": 369,
+   "imaging_fit_rows": [
+    369
+   ],
+   "regime": "honest",
+   "half": "H1",
+   "fit_half": "H2",
+   "n": 370,
+   "elapsed_s": 3.15
+  },
+  "C_H1|Clin + BiomedCLIP": {
+   "clin_scaler_fit_rows": 370,
+   "imaging_fit_rows": [
+    370
+   ],
+   "regime": "apparent",
+   "half": "H1",
+   "n": 370,
+   "elapsed_s": 3.09
+  },
+  "C_H2|Clin + RAD-DINO": {
+   "clin_scaler_fit_rows": 369,
+   "imaging_fit_rows": [
+    369
+   ],
+   "regime": "apparent",
+   "half": "H2",
+   "n": 369,
+   "elapsed_s": 3.11
+  },
+  "A_H1|Clin + RAD-DINO": {
+   "clin_scaler_fit_rows": 369,
+   "imaging_fit_rows": [
+    369
+   ],
+   "regime": "honest",
+   "half": "H1",
+   "fit_half": "H2",
+   "n": 370,
+   "elapsed_s": 3.08
+  },
+  "C_H1|Clin + RAD-DINO": {
+   "clin_scaler_fit_rows": 370,
+   "imaging_fit_rows": [
+    370
+   ],
+   "regime": "apparent",
+   "half": "H1",
+   "n": 370,
+   "elapsed_s": 3.1
+  },
+  "C_H2|Clin + Rad + BiomedCLIP": {
+   "clin_scaler_fit_rows": 369,
+   "imaging_fit_rows": [
+    369,
+    369
+   ],
+   "regime": "apparent",
+   "half": "H2",
+   "n": 369,
+   "elapsed_s": 3.44
+  },
+  "A_H1|Clin + Rad + BiomedCLIP": {
+   "clin_scaler_fit_rows": 369,
+   "imaging_fit_rows": [
+    369,
+    369
+   ],
+   "regime": "honest",
+   "half": "H1",
+   "fit_half": "H2",
+   "n": 370,
+   "elapsed_s": 3.42
+  },
+  "C_H1|Clin + Rad + BiomedCLIP": {
+   "clin_scaler_fit_rows": 370,
+   "imaging_fit_rows": [
+    370,
+    370
+   ],
+   "regime": "apparent",
+   "half": "H1",
+   "n": 370,
+   "elapsed_s": 3.44
+  },
+  "C_H2|Clin + Rad + RAD-DINO": {
+   "clin_scaler_fit_rows": 369,
+   "imaging_fit_rows": [
+    369,
+    369
+   ],
+   "regime": "apparent",
+   "half": "H2",
+   "n": 369,
+   "elapsed_s": 3.42
+  },
+  "A_H1|Clin + Rad + RAD-DINO": {
+   "clin_scaler_fit_rows": 369,
+   "imaging_fit_rows": [
+    369,
+    369
+   ],
+   "regime": "honest",
+   "half": "H1",
+   "fit_half": "H2",
+   "n": 370,
+   "elapsed_s": 3.4
+  },
+  "C_H1|Clin + Rad + RAD-DINO": {
+   "clin_scaler_fit_rows": 370,
+   "imaging_fit_rows": [
+    370,
+    370
+   ],
+   "regime": "apparent",
+   "half": "H1",
+   "n": 370,
+   "elapsed_s": 3.5
+  }
+ },
+ "A_H2_source": "REUSED VERBATIM from FROZEN_R7/priorities_primary_heldout.csv",
+ "H2_DR_source": "REUSED VERBATIM from FROZEN_R7/dr_scores_primary_heldout.csv"
+}

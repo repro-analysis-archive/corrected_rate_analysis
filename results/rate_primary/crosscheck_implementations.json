@@ -1,0 +1,82 @@
+{
+ "note": "grf is primary; the direct implementation reproduces grf's definition exactly; econml uses a truncated 50-point grid on q in [0.05,0.95] and is a sign/ordering/gross-error check only, not a replication",
+ "per_configuration": {
+  "Clinical only": {
+   "direct_grf_definition": -0.06678864506839552,
+   "econml_calc_uplift_toc": -0.040402532313870504,
+   "econml_influence_se": 0.04641912369684747,
+   "grf_estimate": -0.0667886450684,
+   "abs_diff_direct_vs_grf": 4.4825254619240695e-15,
+   "sign_agrees_econml": true
+  },
+  "Clin + Radiomics": {
+   "direct_grf_definition": -0.04538596175262178,
+   "econml_calc_uplift_toc": -0.04668483462078713,
+   "econml_influence_se": 0.049111125065504135,
+   "grf_estimate": -0.04538596175262,
+   "abs_diff_direct_vs_grf": 1.7832957333041577e-15,
+   "sign_agrees_econml": true
+  },
+  "Clin + BiomedCLIP": {
+   "direct_grf_definition": 0.09753156640379228,
+   "econml_calc_uplift_toc": 0.10242565149166652,
+   "econml_influence_se": 0.03497109976126536,
+   "grf_estimate": 0.09753156640379,
+   "abs_diff_direct_vs_grf": 2.275957200481571e-15,
+   "sign_agrees_econml": true
+  },
+  "Clin + RAD-DINO": {
+   "direct_grf_definition": -0.108791903492834,
+   "econml_calc_uplift_toc": -0.09312779170292454,
+   "econml_influence_se": 0.048530747283279364,
+   "grf_estimate": -0.1087919034928,
+   "abs_diff_direct_vs_grf": 3.400058012914542e-14,
+   "sign_agrees_econml": true
+  },
+  "Clin + Rad + BiomedCLIP": {
+   "direct_grf_definition": 0.046373364430901926,
+   "econml_calc_uplift_toc": 0.03364303629217453,
+   "econml_influence_se": 0.03683083038558302,
+   "grf_estimate": 0.0463733644309,
+   "abs_diff_direct_vs_grf": 1.9220736113823023e-15,
+   "sign_agrees_econml": true
+  },
+  "Clin + Rad + RAD-DINO": {
+   "direct_grf_definition": -0.05911956290289538,
+   "econml_calc_uplift_toc": -0.05129107969487094,
+   "econml_influence_se": 0.047404077070776415,
+   "grf_estimate": -0.05911956290289,
+   "abs_diff_direct_vs_grf": 5.377642775528102e-15,
+   "sign_agrees_econml": true
+  }
+ },
+ "rank_order": {
+  "grf": [
+   5,
+   3,
+   1,
+   6,
+   2,
+   4
+  ],
+  "direct": [
+   5,
+   3,
+   1,
+   6,
+   2,
+   4
+  ],
+  "econml": [
+   3,
+   4,
+   1,
+   6,
+   2,
+   5
+  ]
+ },
+ "max_abs_diff_direct_vs_grf": 3.400058012914542e-14,
+ "sign_agreement_grf_vs_econml": true,
+ "rank_order_identical_grf_vs_econml": false
+}

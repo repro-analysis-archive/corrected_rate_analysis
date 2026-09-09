@@ -1,0 +1,30 @@
+{
+  "comparison": "historically designated reference configuration - clinical only",
+  "n_eval": 369,
+  "primary": {
+    "target_labels": ["reference", "clinical_only", "reference - clinical_only"],
+    "results": {
+      "reference": {
+        "estimate": 0.0463733644309,
+        "std_err": 0.04124640224482,
+        "ci": [-0.03446958396895, 0.1272163128308],
+        "z": 1.124300833698,
+        "p": 0.2608854248207
+      },
+      "clinical_only": {
+        "estimate": -0.0667886450684,
+        "std_err": 0.05424888293195,
+        "ci": [-0.173116455615, 0.03953916547823],
+        "z": -1.231152448838,
+        "p": 0.2182658521918
+      },
+      "reference - clinical_only": {
+        "estimate": 0.1131620094993,
+        "std_err": 0.07374807051219,
+        "ci": [-0.0313842087046, 0.2577082277032],
+        "z": 1.534440273669,
+        "p": 0.1249213761398
+      }
+    }
+  }
+}

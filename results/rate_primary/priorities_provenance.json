@@ -1,0 +1,425 @@
+{
+ "PRIMARY": {
+  "tag": "PRIMARY",
+  "cohort": "her2neg",
+  "n_total": 739,
+  "n_train": 370,
+  "n_eval": 369,
+  "clin": [
+   "age",
+   "tumor_subtype_enc",
+   "ethnicity_enc",
+   "bmi_group_enc",
+   "menopause_enc"
+  ],
+  "use_W": true,
+  "discrete_treatment": true,
+  "dropped": 0,
+  "seed": 42,
+  "provenance": {
+   "Clinical only": {
+    "clin_scaler_fit_rows": 370,
+    "imaging_fit_rows": [],
+    "n_train": 370,
+    "n_eval": 369,
+    "X_train_shape": [
+     370,
+     5
+    ],
+    "X_eval_shape": [
+     369,
+     5
+    ],
+    "W_used": true,
+    "discrete_treatment": true,
+    "elapsed_s": 2.26
+   },
+   "Clin + Radiomics": {
+    "clin_scaler_fit_rows": 370,
+    "imaging_fit_rows": [
+     {
+      "block": "rad",
+      "k": 20,
+      "fit_rows": 370
+     }
+    ],
+    "n_train": 370,
+    "n_eval": 369,
+    "X_train_shape": [
+     370,
+     25
+    ],
+    "X_eval_shape": [
+     369,
+     25
+    ],
+    "W_used": true,
+    "discrete_treatment": true,
+    "elapsed_s": 2.86
+   },
+   "Clin + BiomedCLIP": {
+    "clin_scaler_fit_rows": 370,
+    "imaging_fit_rows": [
+     {
+      "block": "clip",
+      "k": 30,
+      "fit_rows": 370
+     }
+    ],
+    "n_train": 370,
+    "n_eval": 369,
+    "X_train_shape": [
+     370,
+     35
+    ],
+    "X_eval_shape": [
+     369,
+     35
+    ],
+    "W_used": true,
+    "discrete_treatment": true,
+    "elapsed_s": 3.13
+   },
+   "Clin + RAD-DINO": {
+    "clin_scaler_fit_rows": 370,
+    "imaging_fit_rows": [
+     {
+      "block": "dino",
+      "k": 30,
+      "fit_rows": 370
+     }
+    ],
+    "n_train": 370,
+    "n_eval": 369,
+    "X_train_shape": [
+     370,
+     35
+    ],
+    "X_eval_shape": [
+     369,
+     35
+    ],
+    "W_used": true,
+    "discrete_treatment": true,
+    "elapsed_s": 3.12
+   },
+   "Clin + Rad + BiomedCLIP": {
+    "clin_scaler_fit_rows": 370,
+    "imaging_fit_rows": [
+     {
+      "block": "rad",
+      "k": 20,
+      "fit_rows": 370
+     },
+     {
+      "block": "clip",
+      "k": 30,
+      "fit_rows": 370
+     }
+    ],
+    "n_train": 370,
+    "n_eval": 369,
+    "X_train_shape": [
+     370,
+     55
+    ],
+    "X_eval_shape": [
+     369,
+     55
+    ],
+    "W_used": true,
+    "discrete_treatment": true,
+    "elapsed_s": 3.47
+   },
+   "Clin + Rad + RAD-DINO": {
+    "clin_scaler_fit_rows": 370,
+    "imaging_fit_rows": [
+     {
+      "block": "rad",
+      "k": 20,
+      "fit_rows": 370
+     },
+     {
+      "block": "dino",
+      "k": 30,
+      "fit_rows": 370
+     }
+    ],
+    "n_train": 370,
+    "n_eval": 369,
+    "X_train_shape": [
+     370,
+     55
+    ],
+    "X_eval_shape": [
+     369,
+     55
+    ],
+    "W_used": true,
+    "discrete_treatment": true,
+    "elapsed_s": 3.47
+   }
+  }
+ },
+ "MAMMAPRINT": {
+  "tag": "MAMMAPRINT",
+  "cohort": "her2neg",
+  "n_total": 739,
+  "n_train": 370,
+  "n_eval": 369,
+  "clin": [
+   "age",
+   "tumor_subtype_enc",
+   "ethnicity_enc",
+   "bmi_group_enc",
+   "menopause_enc",
+   "mammaprint"
+  ],
+  "use_W": true,
+  "discrete_treatment": true,
+  "dropped": 0,
+  "seed": 42,
+  "provenance": {
+   "Clinical + MammaPrint": {
+    "clin_scaler_fit_rows": 370,
+    "imaging_fit_rows": [],
+    "n_train": 370,
+    "n_eval": 369,
+    "X_train_shape": [
+     370,
+     6
+    ],
+    "X_eval_shape": [
+     369,
+     6
+    ],
+    "W_used": true,
+    "discrete_treatment": true,
+    "elapsed_s": 2.2
+   },
+   "Historical reference + MammaPrint": {
+    "clin_scaler_fit_rows": 370,
+    "imaging_fit_rows": [
+     {
+      "block": "rad",
+      "k": 20,
+      "fit_rows": 370
+     },
+     {
+      "block": "clip",
+      "k": 30,
+      "fit_rows": 370
+     }
+    ],
+    "n_train": 370,
+    "n_eval": 369,
+    "X_train_shape": [
+     370,
+     56
+    ],
+    "X_eval_shape": [
+     369,
+     56
+    ],
+    "W_used": true,
+    "discrete_treatment": true,
+    "elapsed_s": 3.39
+   }
+  }
+ },
+ "NO_EPOCH": {
+  "tag": "NO_EPOCH",
+  "cohort": "her2neg",
+  "n_total": 739,
+  "n_train": 370,
+  "n_eval": 369,
+  "clin": [
+   "age",
+   "tumor_subtype_enc",
+   "ethnicity_enc",
+   "bmi_group_enc",
+   "menopause_enc"
+  ],
+  "use_W": false,
+  "discrete_treatment": true,
+  "dropped": 0,
+  "seed": 42,
+  "provenance": {
+   "Clinical only": {
+    "clin_scaler_fit_rows": 370,
+    "imaging_fit_rows": [],
+    "n_train": 370,
+    "n_eval": 369,
+    "X_train_shape": [
+     370,
+     5
+    ],
+    "X_eval_shape": [
+     369,
+     5
+    ],
+    "W_used": false,
+    "discrete_treatment": true,
+    "elapsed_s": 2.24
+   },
+   "Clin + Rad + BiomedCLIP": {
+    "clin_scaler_fit_rows": 370,
+    "imaging_fit_rows": [
+     {
+      "block": "rad",
+      "k": 20,
+      "fit_rows": 370
+     },
+     {
+      "block": "clip",
+      "k": 30,
+      "fit_rows": 370
+     }
+    ],
+    "n_train": 370,
+    "n_eval": 369,
+    "X_train_shape": [
+     370,
+     55
+    ],
+    "X_eval_shape": [
+     369,
+     55
+    ],
+    "W_used": false,
+    "discrete_treatment": true,
+    "elapsed_s": 3.66
+   }
+  }
+ },
+ "ALT_NUISANCE": {
+  "tag": "ALT_NUISANCE",
+  "cohort": "her2neg",
+  "n_total": 739,
+  "n_train": 370,
+  "n_eval": 369,
+  "clin": [
+   "age",
+   "tumor_subtype_enc",
+   "ethnicity_enc",
+   "bmi_group_enc",
+   "menopause_enc"
+  ],
+  "use_W": true,
+  "discrete_treatment": false,
+  "dropped": 0,
+  "seed": 42,
+  "provenance": {
+   "Clinical only": {
+    "clin_scaler_fit_rows": 370,
+    "imaging_fit_rows": [],
+    "n_train": 370,
+    "n_eval": 369,
+    "X_train_shape": [
+     370,
+     5
+    ],
+    "X_eval_shape": [
+     369,
+     5
+    ],
+    "W_used": true,
+    "discrete_treatment": false,
+    "elapsed_s": 2.02
+   },
+   "Clin + Rad + BiomedCLIP": {
+    "clin_scaler_fit_rows": 370,
+    "imaging_fit_rows": [
+     {
+      "block": "rad",
+      "k": 20,
+      "fit_rows": 370
+     },
+     {
+      "block": "clip",
+      "k": 30,
+      "fit_rows": 370
+     }
+    ],
+    "n_train": 370,
+    "n_eval": 369,
+    "X_train_shape": [
+     370,
+     55
+    ],
+    "X_eval_shape": [
+     369,
+     55
+    ],
+    "W_used": true,
+    "discrete_treatment": false,
+    "elapsed_s": 3.17
+   }
+  }
+ },
+ "EMPTY_ARM_728": {
+  "tag": "EMPTY_ARM_728",
+  "cohort": "her2neg",
+  "n_total": 739,
+  "n_train": 362,
+  "n_eval": 366,
+  "clin": [
+   "age",
+   "tumor_subtype_enc",
+   "ethnicity_enc",
+   "bmi_group_enc",
+   "menopause_enc"
+  ],
+  "use_W": true,
+  "discrete_treatment": true,
+  "dropped": 11,
+  "seed": 42,
+  "provenance": {
+   "Clinical only": {
+    "clin_scaler_fit_rows": 362,
+    "imaging_fit_rows": [],
+    "n_train": 362,
+    "n_eval": 366,
+    "X_train_shape": [
+     362,
+     5
+    ],
+    "X_eval_shape": [
+     366,
+     5
+    ],
+    "W_used": true,
+    "discrete_treatment": true,
+    "elapsed_s": 2.18
+   },
+   "Clin + Rad + BiomedCLIP": {
+    "clin_scaler_fit_rows": 362,
+    "imaging_fit_rows": [
+     {
+      "block": "rad",
+      "k": 20,
+      "fit_rows": 362
+     },
+     {
+      "block": "clip",
+      "k": 30,
+      "fit_rows": 362
+     }
+    ],
+    "n_train": 362,
+    "n_eval": 366,
+    "X_train_shape": [
+     362,
+     55
+    ],
+    "X_eval_shape": [
+     366,
+     55
+    ],
+    "W_used": true,
+    "discrete_treatment": true,
+    "elapsed_s": 3.39
+   }
+  }
+ }
+}

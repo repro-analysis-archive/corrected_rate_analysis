@@ -1,0 +1,70 @@
+{
+ "rule": "boundaries at arm-open starts and (ends+1); merge ONLY adjacent intervals with identical active-arm set; NEVER merge non-adjacent; NEVER merge on size/counts/diagnostics/results",
+ "n_change_points": 22,
+ "n_raw_intervals": 23,
+ "n_adjacent_merges": 0,
+ "n_epochs_total": 22,
+ "per_cohort": {
+  "her2neg": {
+   "n": 739,
+   "levels_present": 22,
+   "sizes": {
+    "1": 2,
+    "2": 3,
+    "3": 89,
+    "4": 80,
+    "5": 4,
+    "6": 17,
+    "7": 1,
+    "8": 23,
+    "9": 66,
+    "10": 3,
+    "11": 5,
+    "12": 143,
+    "13": 1,
+    "14": 27,
+    "15": 3,
+    "16": 34,
+    "17": 38,
+    "18": 79,
+    "19": 4,
+    "20": 9,
+    "21": 9,
+    "22": 99
+   },
+   "min": 1,
+   "median": 13.0,
+   "max": 143,
+   "n_levels_lt_5": 8,
+   "n_levels_lt_10": 11
+  },
+  "her2pos": {
+   "n": 241,
+   "levels_present": 17,
+   "sizes": {
+    "3": 46,
+    "4": 25,
+    "5": 3,
+    "6": 7,
+    "7": 1,
+    "8": 6,
+    "9": 22,
+    "10": 1,
+    "11": 2,
+    "12": 45,
+    "13": 3,
+    "14": 11,
+    "15": 2,
+    "16": 15,
+    "17": 19,
+    "18": 32,
+    "19": 1
+   },
+   "min": 1,
+   "median": 7.0,
+   "max": 46,
+   "n_levels_lt_5": 7,
+   "n_levels_lt_10": 9
+  }
+ }
+}

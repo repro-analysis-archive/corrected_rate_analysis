@@ -1,0 +1,9 @@
+# regenerated outputs and non-redistributed inputs
+reproduction/
+external_data/
+# caches and system files
+__pycache__/
+*.pyc
+.DS_Store
+.Rhistory
+.RData

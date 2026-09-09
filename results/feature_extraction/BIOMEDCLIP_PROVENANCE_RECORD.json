@@ -1,0 +1,82 @@
+{
+ "record": "BiomedCLIP provenance specification (parity with RAD-DINO 8.3a)",
+ "date": "2026-07-25",
+ "model_repository": "microsoft/BiomedCLIP-PubMedBERT_256-vit_base_patch16_224",
+ "revision": "9f341de24bfb00180f1b847274256e9b65a3a32e",
+ "loader": "open_clip.create_model_and_transforms('hf-hub:...')  -- NOT transformers",
+ "library_versions": {
+  "open_clip_torch": "3.2.0",
+  "torch": "2.10.0",
+  "transformers": "4.57.6"
+ },
+ "weight_files": [
+  {
+   "file": "open_clip_pytorch_model.bin",
+   "bytes": 783705670,
+   "sha256": "52cc993c5c5ff962bd0c60931874bc001e7e9b41666a385530f4a036294576be"
+  }
+ ],
+ "preprocessing": {
+  "slice_selection": "argmax over per-slice tumour area from the segmentation; middle slice if mask empty",
+  "crop_centre": "IMAGE centre (CenterCrop) -- NOT tumour-centred; segmentation selects the slice index only",
+  "crop_extent": "224 x 224 after Resize(224, bicubic)",
+  "resize": "Resize(224, interpolation=bicubic) then CenterCrop(224)",
+  "intensity": "whole-slice min-max to [0,255] uint8, epsilon 1e-8; NO windowing, NO per-ROI scaling",
+  "channels": "greyscale replicated to 3 channels (np.stack([x]*3, axis=-1))",
+  "normalisation": "open_clip preprocess_val transform (CLIP mean/std)"
+ },
+ "extraction_point": "model.encode_image(x) -- the projected image embedding, not last_hidden_state",
+ "output_dimension": 512,
+ "device": "mps",
+ "cohorts": {
+  "her2neg": {
+   "n": 739,
+   "dim": 512,
+   "patient_id_order_identical_to_archive": true,
+   "archive_sha256": "5382a4ecc0c6681c7e1c33d9e4e2f0dd8c246d3b0178ecd28d178fab01129c31",
+   "reextract_sha256": "5382a4ecc0c6681c7e1c33d9e4e2f0dd8c246d3b0178ecd28d178fab01129c31"
+  },
+  "her2pos": {
+   "n": 241,
+   "dim": 512,
+   "patient_id_order_identical_to_archive": true,
+   "archive_sha256": "82967674696ef43f7009a8d1c2dfcdd44481366e8391f58e38e5c32e0351784c",
+   "reextract_sha256": "82967674696ef43f7009a8d1c2dfcdd44481366e8391f58e38e5c32e0351784c"
+  }
+ },
+ "cosine_distribution": {
+  "her2neg": {
+   "cosine_median": 1.0,
+   "cosine_min": 0.9999999999999998,
+   "cosine_mean": 1.0,
+   "max_abs_elementwise_diff": 3.552713678800501e-15,
+   "median_abs_elementwise_diff": 0.0,
+   "pca30_spearman_min": 1.0
+  },
+  "her2pos": {
+   "cosine_median": 1.0,
+   "cosine_min": 0.9999999999999998,
+   "cosine_mean": 1.0,
+   "max_abs_elementwise_diff": 3.552713678800501e-15,
+   "median_abs_elementwise_diff": 0.0,
+   "pca30_spearman_min": 1.0
+  }
+ },
+ "rule_8_3a_class": "REPRODUCED (max abs diff 3.55e-15 <= 1e-12 -> no explanation required)",
+ "rerun_consistency_same_environment": {
+  "her2neg": {
+   "n": 739,
+   "method": "two in-memory extractions compared directly (no CSV round-trip)",
+   "rerun_bit_identical": true,
+   "rerun_max_abs_diff": 0.0
+  },
+  "her2pos": {
+   "n": 241,
+   "method": "two in-memory extractions compared directly (no CSV round-trip)",
+   "rerun_bit_identical": true,
+   "rerun_max_abs_diff": 0.0
+  }
+ },
+ "rerun_consistency_verdict": "DETERMINISTIC — two in-memory extractions bit-identical",
+ "rerun_consistency_note": "An earlier check compared a fresh extraction against the stored CSV and reported 3.553e-15; that was float64 text round-trip in the CSV, not model nondeterminism. Superseded by this direct in-memory comparison."
+}

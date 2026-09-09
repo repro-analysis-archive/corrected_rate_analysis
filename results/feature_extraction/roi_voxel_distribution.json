@@ -1,0 +1,149 @@
+{
+ "date": "2026-07-25",
+ "label_counted": 1,
+ "resample": "1 mm isotropic, sitkNearestNeighbor (label map)",
+ "rule": "largest binCount in {32,64} with >=95% of tumours having >=10 voxels/bin; 64 needs >=640 voxels, 32 needs >=320",
+ "rule_fixed_before_seeing_distribution": true,
+ "n_processed": 980,
+ "n_ok": 980,
+ "n_errors": 0,
+ "errors": [],
+ "distribution": {
+  "HER2neg": {
+   "cohort": "HER2neg",
+   "n": 739,
+   "median": 11559.0,
+   "q1": 6076.0,
+   "q3": 22836.0,
+   "iqr": 16760.0,
+   "min": 819.0,
+   "max": 587422.0,
+   "prop_below": {
+    "320": 0.0,
+    "640": 0.0,
+    "1280": 0.006765899864682003,
+    "2560": 0.05277401894451962
+   },
+   "prop_at_or_above": {
+    "320": 1.0,
+    "640": 1.0,
+    "1280": 0.993234100135318,
+    "2560": 0.9472259810554804
+   }
+  },
+  "HER2pos": {
+   "cohort": "HER2pos",
+   "n": 241,
+   "median": 7745.0,
+   "q1": 4341.0,
+   "q3": 17761.0,
+   "iqr": 13420.0,
+   "min": 378.0,
+   "max": 377379.0,
+   "prop_below": {
+    "320": 0.0,
+    "640": 0.004149377593360996,
+    "1280": 0.02074688796680498,
+    "2560": 0.07468879668049792
+   },
+   "prop_at_or_above": {
+    "320": 1.0,
+    "640": 0.995850622406639,
+    "1280": 0.979253112033195,
+    "2560": 0.9253112033195021
+   }
+  },
+  "union": {
+   "cohort": "union",
+   "n": 980,
+   "median": 10649.0,
+   "q1": 5561.0,
+   "q3": 21824.5,
+   "iqr": 16263.5,
+   "min": 378.0,
+   "max": 587422.0,
+   "prop_below": {
+    "320": 0.0,
+    "640": 0.0010204081632653062,
+    "1280": 0.01020408163265306,
+    "2560": 0.058163265306122446
+   },
+   "prop_at_or_above": {
+    "320": 1.0,
+    "640": 0.9989795918367347,
+    "1280": 0.9897959183673469,
+    "2560": 0.9418367346938775
+   }
+  }
+ },
+ "decision": {
+  "union": {
+   "qualification": {
+    "64": {
+     "frac_meeting": 0.9989795918367347,
+     "qualifies": true,
+     "required_voxels": 640
+    },
+    "32": {
+     "frac_meeting": 1.0,
+     "qualifies": true,
+     "required_voxels": 320
+    }
+   },
+   "primary_binCount": 64,
+   "sensitivity_binCount": 32,
+   "status": "OK"
+  },
+  "HER2neg": {
+   "qualification": {
+    "64": {
+     "frac_meeting": 1.0,
+     "qualifies": true,
+     "required_voxels": 640
+    },
+    "32": {
+     "frac_meeting": 1.0,
+     "qualifies": true,
+     "required_voxels": 320
+    }
+   },
+   "primary_binCount": 64,
+   "sensitivity_binCount": 32,
+   "status": "OK"
+  },
+  "HER2pos": {
+   "qualification": {
+    "64": {
+     "frac_meeting": 0.995850622406639,
+     "qualifies": true,
+     "required_voxels": 640
+    },
+    "32": {
+     "frac_meeting": 1.0,
+     "qualifies": true,
+     "required_voxels": 320
+    }
+   },
+   "primary_binCount": 64,
+   "sensitivity_binCount": 32,
+   "status": "OK"
+  }
+ },
+ "DECISION_governing": {
+  "qualification": {
+   "64": {
+    "frac_meeting": 0.9989795918367347,
+    "qualifies": true,
+    "required_voxels": 640
+   },
+   "32": {
+    "frac_meeting": 1.0,
+    "qualifies": true,
+    "required_voxels": 320
+   }
+  },
+  "primary_binCount": 64,
+  "sensitivity_binCount": 32,
+  "status": "OK"
+ }
+}

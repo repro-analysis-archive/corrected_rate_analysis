@@ -1,0 +1,63 @@
+{
+ "method": "SHA-256 of the UTF-8 text formed by sorting the patient identifiers of the set lexicographically and joining them with a newline character (no trailing newline). The digests reveal no identifier; regenerate the sets with the released code and compare with scripts/verify_split_digests.py.",
+ "conditional_on": {
+  "clinical_and_imaging_info.xlsx_sha256": "0d95c6affc72074d0c2c51a3fad2f2f007ac05eb8c207ef77416f43cdc131f1c",
+  "note": "the analysis-frame order is the workbook row order of the cohort rows; a different workbook version may order rows differently"
+ },
+ "her2neg_cohort": {
+  "n": 739,
+  "sha256": "1dc60bbb53329f73350ad6775c785272ef594f2b0ec4e4060fd9d75d6d17a7bb",
+  "rule": "dataset == ISPY2, her2 == 0, pcr non-missing"
+ },
+ "her2pos_cohort": {
+  "n": 241,
+  "sha256": "1c5bef5f875cfbc7676a325d9657e836b5f0a711259f3eff06fae3e4cce3c180",
+  "rule": "dataset == ISPY2, her2 == 1, pcr non-missing"
+ },
+ "H1_train": {
+  "n": 370,
+  "sha256": "3b7a2a6117cf0bcb47f191159dc3cdb68cc22da155c7e25bf88c73c9ceb1fa90",
+  "rule": "first 370 indices of numpy.random.default_rng(42).permutation(739) over the analysis-frame order"
+ },
+ "H2_evaluation": {
+  "n": 369,
+  "sha256": "f72611095e20c73eeb211be65439059809653688b7c977899e2fc593bfaac748",
+  "rule": "the remaining 369 indices"
+ },
+ "sequential_folds": {
+  "1": {
+   "n": 148,
+   "sha256": "4a799cb25b3e486a326c944419a35791d345ad5a34f8ba8d75256fcf5d40c681"
+  },
+  "2": {
+   "n": 148,
+   "sha256": "a576fd54b0fb044f8efa9e887864e62445388687e67437e68ce2866b79a8dc74"
+  },
+  "3": {
+   "n": 148,
+   "sha256": "27f48a9de76541483ba90d5eda1dfdb25751f2fd531080b6980dfeb4c667288e"
+  },
+  "4": {
+   "n": 148,
+   "sha256": "d939a6e78eb30b65afb861496b5b6b444d49e90b343d650b7ed49501f9bd9c73"
+  },
+  "5": {
+   "n": 147,
+   "sha256": "87d22343a76a57b24978a0f3b6d34980b6cae8321baed4ba1907c5fa971aa5ca"
+  }
+ },
+ "empty_arm_epoch_patients": {
+  "n": 11,
+  "epochs": [
+   1,
+   21
+  ],
+  "sha256": "2d08a9a0d555efb76b3a3618790b406ef2064ae46ab39200ba8a3169be141eee"
+ },
+ "epoch_assignment_table": {
+  "n": 980,
+  "n_epochs": 22,
+  "layout": "patient_id,date,epoch as written by src/rate_analysis/derive_epochs.py",
+  "sha256_of_file": "b893a669f95ae1e92a346bbae23450fdb99fc6b899baad69b8679e0a42c99067"
+ }
+}

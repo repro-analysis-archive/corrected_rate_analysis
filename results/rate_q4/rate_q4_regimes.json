@@ -1,0 +1,256 @@
+{
+  "design": {
+    "question": "change in the observed standard RATE/AUTOC POINT ESTIMATE when evaluation-patient covariates enter unsupervised preprocessing only, with the causal forest always fitted on the opposite half",
+    "kind": "descriptive preprocessing-leakage diagnostic; NOT a test; NO confirmatory p-values; NOT the retired permutation null-variance analysis",
+    "regimes": "A=(img train, clin train) D1=(img FULL739, clin train) D2=(img train, clin FULL739) B=(img FULL739, clin FULL739)",
+    "split": "frozen R7 50/50 split reused verbatim; H1 n=370, H2 n=369",
+    "dr_H2": "FROZEN_R7/dr_scores_primary_heldout.csv reused byte-for-byte",
+    "dr_H1": "FROZEN_R7Q3/dr_scores_H1.csv reused byte-for-byte",
+    "contrasts": "additive RATE point-estimate contrasts; pooled = (370*H1 + 369*H2)/739; never exponentiated, never ratios",
+    "se_note": "grf half-sample bootstrap SEs stored for REFERENCE ONLY and not used to claim any A-vs-D1/D2/B difference is supported",
+    "grf_version": "2.6.1"
+  },
+  "run_checks": {
+    "max_abs_A_H2_vs_frozen_R7_Q1": 3.380629109984e-14,
+    "max_abs_A_H1_vs_frozen_Q3": 2.640943019827e-14,
+    "passed": true
+  },
+  "n_H1": 370,
+  "n_H2": 369,
+  "results": {
+    "Clinical only": {
+      "has_imaging_block": false,
+      "by_half": {
+        "H1": {
+          "A": 0.05144275687004,
+          "D1": 0.05144275687004,
+          "D2": 0.04584226671763,
+          "B": 0.04584226671763,
+          "se_A": 0.05293995921168,
+          "se_D1": 0.05293995921168,
+          "se_D2": 0.05393744257982,
+          "se_B": 0.05393744257982,
+          "P_effect": "N/A (factor P structurally absent)",
+          "S_effect": -0.005600490152416,
+          "PS": "N/A (factor P structurally absent)",
+          "Total_B_minus_A": -0.005600490152416
+        },
+        "H2": {
+          "A": -0.0667886450684,
+          "D1": -0.0667886450684,
+          "D2": -0.06553240040572,
+          "B": -0.06553240040572,
+          "se_A": 0.05424888293195,
+          "se_D1": 0.05424888293195,
+          "se_D2": 0.05424732531733,
+          "se_B": 0.05424732531733,
+          "P_effect": "N/A (factor P structurally absent)",
+          "S_effect": 0.001256244662672,
+          "PS": "N/A (factor P structurally absent)",
+          "Total_B_minus_A": 0.001256244662672
+        }
+      },
+      "pooled_P": "N/A (factor P structurally absent)",
+      "pooled_S": -0.002176761942988,
+      "pooled_PS": "N/A (factor P structurally absent)",
+      "pooled_B_minus_A": -0.002176761942988,
+      "q3_pooled_C_minus_A": 0.1570032802034,
+      "preprocessing_fraction_of_Q3": 0.01386443608164
+    },
+    "Clin + Radiomics": {
+      "has_imaging_block": true,
+      "by_half": {
+        "H1": {
+          "A": 0.1098372706559,
+          "D1": 0.04412032757191,
+          "D2": 0.1081236560542,
+          "B": 0.04311014593271,
+          "se_A": 0.04548257365287,
+          "se_D1": 0.04337629272669,
+          "se_D2": 0.04539732812599,
+          "se_B": 0.0430296117332,
+          "P_effect": -0.06536522660273,
+          "S_effect": -0.001361898120436,
+          "PS": 0.0007034329624768,
+          "Total_B_minus_A": -0.06672712472317
+        },
+        "H2": {
+          "A": -0.04538596175262,
+          "D1": -0.02771690960506,
+          "D2": -0.0431334943295,
+          "B": -0.02816901475304,
+          "se_A": 0.05600145599637,
+          "se_D1": 0.06892022245069,
+          "se_D2": 0.05535636925111,
+          "se_B": 0.06841558660572,
+          "P_effect": 0.01631676586201,
+          "S_effect": 0.0009001811375729,
+          "PS": -0.002704572571107,
+          "Total_B_minus_A": 0.01721694699959
+        }
+      },
+      "pooled_P": -0.02457949558853,
+      "pooled_S": -0.0002323889916059,
+      "pooled_PS": -0.0009982639818975,
+      "pooled_B_minus_A": -0.02481188458014,
+      "q3_pooled_C_minus_A": 0.2100606111767,
+      "preprocessing_fraction_of_Q3": 0.1181177396426
+    },
+    "Clin + BiomedCLIP": {
+      "has_imaging_block": true,
+      "by_half": {
+        "H1": {
+          "A": 0.09840774843939,
+          "D1": 0.1105994391956,
+          "D2": 0.09775043632767,
+          "B": 0.1101302532598,
+          "se_A": 0.0447256957785,
+          "se_D1": 0.0447017296052,
+          "se_D2": 0.04480924563649,
+          "se_B": 0.04421776163192,
+          "P_effect": 0.01228575384415,
+          "S_effect": -0.0005632490237591,
+          "PS": 0.0001881261759217,
+          "Total_B_minus_A": 0.01172250482039
+        },
+        "H2": {
+          "A": 0.09753156640379,
+          "D1": 0.04767342618284,
+          "D2": 0.09713849053561,
+          "B": 0.0633823636484,
+          "se_A": 0.04068364222704,
+          "se_D1": 0.06895201734293,
+          "se_D2": 0.04063211975919,
+          "se_B": 0.06611481321348,
+          "P_effect": -0.04180713355408,
+          "S_effect": 0.007657930798686,
+          "PS": 0.01610201333375,
+          "Total_B_minus_A": -0.03414920275539
+        }
+      },
+      "pooled_P": -0.01472409114901,
+      "pooled_S": 0.003541778519519,
+      "pooled_PS": 0.008134302578137,
+      "pooled_B_minus_A": -0.01118231262949,
+      "q3_pooled_C_minus_A": 0.1845523052647,
+      "preprocessing_fraction_of_Q3": 0.06059156299052
+    },
+    "Clin + RAD-DINO": {
+      "has_imaging_block": true,
+      "by_half": {
+        "H1": {
+          "A": 0.05688600558897,
+          "D1": 0.0293146598758,
+          "D2": 0.05564619208982,
+          "B": 0.03086783956628,
+          "se_A": 0.04873978786492,
+          "se_D1": 0.05147638226279,
+          "se_D2": 0.04871445802475,
+          "se_B": 0.05171987412041,
+          "P_effect": -0.02617484911835,
+          "S_effect": 0.0001566830956657,
+          "PS": 0.002792993189633,
+          "Total_B_minus_A": -0.02601816602269
+        },
+        "H2": {
+          "A": -0.1087919034928,
+          "D1": -0.01159836649498,
+          "D2": -0.1103629877927,
+          "B": -0.01109557520251,
+          "se_A": 0.05565729201591,
+          "se_D1": 0.05287214252298,
+          "se_D2": 0.05518441871384,
+          "se_B": 0.05313800223548,
+          "P_effect": 0.09823047479405,
+          "S_effect": -0.0005341465037211,
+          "PS": 0.002073875592381,
+          "Total_B_minus_A": 0.09769632829033
+        }
+      },
+      "pooled_P": 0.03594364144142,
+      "pooled_S": -0.0001882642956384,
+      "pooled_PS": 0.002433920938772,
+      "pooled_B_minus_A": 0.03575537714579,
+      "q3_pooled_C_minus_A": 0.2791724645171,
+      "preprocessing_fraction_of_Q3": 0.1280763029679
+    },
+    "Clin + Rad + BiomedCLIP": {
+      "has_imaging_block": true,
+      "by_half": {
+        "H1": {
+          "A": 0.1023479215266,
+          "D1": 0.0437210157985,
+          "D2": 0.1000352229311,
+          "B": 0.04408160101868,
+          "se_A": 0.04474577704372,
+          "se_D1": 0.04977101105738,
+          "se_D2": 0.04501196111893,
+          "se_B": 0.04935050302398,
+          "P_effect": -0.05729026382027,
+          "S_effect": -0.0009760566876454,
+          "PS": 0.002673283815649,
+          "Total_B_minus_A": -0.05826632050791
+        },
+        "H2": {
+          "A": 0.0463733644309,
+          "D1": 0.06229538513279,
+          "D2": 0.04672076812598,
+          "B": 0.05921137809869,
+          "se_A": 0.04124640224482,
+          "se_D1": 0.05844187944416,
+          "se_D2": 0.04130713548709,
+          "se_B": 0.05841160172184,
+          "P_effect": 0.0142063153373,
+          "S_effect": -0.001368301669505,
+          "PS": -0.003431410729176,
+          "Total_B_minus_A": 0.01283801366779
+        }
+      },
+      "pooled_P": -0.02159034811101,
+      "pooled_S": -0.001171913789548,
+      "pooled_PS": -0.0003749330815643,
+      "pooled_B_minus_A": -0.02276226190056,
+      "q3_pooled_C_minus_A": 0.2270655268965,
+      "preprocessing_fraction_of_Q3": 0.1002453442038
+    },
+    "Clin + Rad + RAD-DINO": {
+      "has_imaging_block": true,
+      "by_half": {
+        "H1": {
+          "A": 0.1062138029046,
+          "D1": 0.0105534285536,
+          "D2": 0.1073291629214,
+          "B": 0.01066740065083,
+          "se_A": 0.04380542100991,
+          "se_D1": 0.04622387223787,
+          "se_D2": 0.04390715897821,
+          "se_B": 0.04623467933515,
+          "P_effect": -0.09616106831082,
+          "S_effect": 0.0006146660570306,
+          "PS": -0.001001387919608,
+          "Total_B_minus_A": -0.09554640225379
+        },
+        "H2": {
+          "A": -0.0591195629029,
+          "D1": -0.03805626013441,
+          "D2": -0.05973372079001,
+          "B": -0.03633786629821,
+          "se_A": 0.06103025448438,
+          "se_D1": 0.06072093126269,
+          "se_D2": 0.06103619546612,
+          "se_B": 0.06058277404627,
+          "P_effect": 0.02222957863014,
+          "S_effect": 0.0005521179745452,
+          "PS": 0.002332551723321,
+          "Total_B_minus_A": 0.02278169660469
+        }
+      },
+      "pooled_P": -0.03704584676655,
+      "pooled_S": 0.0005834343351942,
+      "pooled_PS": 0.0006633261916785,
+      "pooled_B_minus_A": -0.03646241243136,
+      "q3_pooled_C_minus_A": 0.2450738279207,
+      "preprocessing_fraction_of_Q3": 0.1487813396507
+    }
+  }
+}
