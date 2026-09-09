@@ -44,6 +44,8 @@ Records of the feature round: model checkpoints and revisions (`BIOMEDCLIP_PROVE
 
 ## Terminology
 
-Regime A is called "honest" in these records and "opposite-half" in the manuscript and figures; regime C is
-"apparent" or "same-sample". References to `FROZEN_*` sets, round labels and decision numbers point to the
-private development record (see the top-level README).
+Historical internal records use the label "honest"; in the revised manuscript and release-facing figures, the same
+evaluation regime (rule and preprocessing fitted on the opposite half) is termed "opposite-half". Likewise the
+records' "apparent" regime is the manuscript's "same-sample" regime. The frozen records are reproduced with their
+original wording. References to `FROZEN_*` sets, round labels and decision numbers point to the private development
+record (see the top-level README).

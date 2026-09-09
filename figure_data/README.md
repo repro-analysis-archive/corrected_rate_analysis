@@ -20,6 +20,6 @@ that are not distributed because they carry patient identifiers; they are regene
 (`splits/README.md`), and the released result files are byte-identical to the record, so the remaining hashes
 verify directly. `fig_data_r7.mat` is byte-identical to the record.
 
-Two descriptive label strings in the JSON metadata use the working term "honest" for regime A
-(`Fig1_data.json`: question Q3; `Fig4_data.json`: `x_label`); the final figures and the manuscript use
-"opposite-half" for the same regime. Plotted values are unaffected.
+The descriptive label strings for the Q3 regimes (`Fig1_data.json`: question Q3; `Fig4_data.json`: `question`
+and `x_label`) use the manuscript terminology "opposite-half"; the frozen originals used the working term for the
+same regime, and `docs/CODE_MODIFICATIONS.md` records the string change. Plotted values are unaffected.

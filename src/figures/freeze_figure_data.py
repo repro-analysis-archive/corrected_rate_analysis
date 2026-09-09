@@ -125,7 +125,7 @@ f1 = dict(BASE, figure="Fig1", question="corrected analytic framework (R7)",
                        "role": "parallel sensitivity branch from HER2-negative, not a sequential exclusion"}},
     questions=[{"key": "Q1", "text": "Configuration-specific RATE/AUTOC on independent held-out evaluation"},
                {"key": "Q2", "text": "Paired incremental RATE comparison"},
-               {"key": "Q3", "text": "Honest vs same-sample model-development/evaluation diagnostic"},
+               {"key": "Q3", "text": "Opposite-half vs same-sample model-development/evaluation diagnostic"},
                {"key": "Q4", "text": "Preprocessing-placement diagnostic, opposite-half model fitting"}],
     directions={"Q1": "one direction (train H1 -> evaluate H2)", "Q2": "one direction (train H1 -> evaluate H2)",
                 "Q3": "both split directions", "Q4": "both split directions"},
@@ -184,11 +184,11 @@ f3 = dict(BASE, figure="Fig3", question="Q2 incremental value of the reference c
 w("Fig3_data.json", f3)
 
 # ---------------- Fig 4 ----------------
-f4 = dict(BASE, figure="Fig4", question="Q3 same-sample versus honest model-development/evaluation",
+f4 = dict(BASE, figure="Fig4", question="Q3 same-sample versus opposite-half model-development/evaluation",
     kind="grouped dot/range plot", descriptive=True, inferential=False,
     interval="NONE", p_value="NONE", reference_line=0.0,
     analytic_n=n739, evaluation_n={"H1": n_H1, "H2": n_H2},
-    x_label="Change in RATE (same-sample - honest)",
+    x_label="Change in RATE (same-sample - opposite-half)",
     pooled_definition=q3["design"]["pooled"],
     rows=[{"key": k, "label": LABEL[i], "order": i + 1,
            "H1": q3["results"][k]["optimism_H1"], "H2": q3["results"][k]["optimism_H2"],

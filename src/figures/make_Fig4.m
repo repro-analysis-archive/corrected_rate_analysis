@@ -1,4 +1,4 @@
-% make_Fig4.m — Q3: change in the RATE point estimate under same-sample versus honest
+% make_Fig4.m — Q3: change in the RATE point estimate under same-sample versus opposite-half
 % model development/evaluation. Descriptive; no interval, no p-value. Class V.
 S = jiim_style_r7();
 here = fileparts(mfilename('fullpath'));

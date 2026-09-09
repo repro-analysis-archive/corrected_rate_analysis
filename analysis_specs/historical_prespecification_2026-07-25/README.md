@@ -12,13 +12,17 @@ Verification of the timestamp (requires the `opentimestamps-client` Python packa
 ots verify PRESPEC_STAMP.txt.ots      # PRESPEC_STAMP.txt must be alongside
 ```
 
+**What the timestamp proof authenticates.** The timestamp proof corresponds to the original private unredacted
+record. The publicly released copy of the plan has been redacted for privacy and therefore does not have the same
+cryptographic hash. The proof must not be interpreted as authenticating the exact bytes of the public redacted
+copy: it authenticates `PRESPEC_STAMP.txt` (reproduced unchanged), whose plan hash `87a2da62…` is that of the
+unredacted original held in the private record.
+
 Redaction. The committed plan contained, in its "Paths relocated" note, two home-folder directory names of the
 development workstation and the name of a folder-synchronisation service. This public copy replaces those three
 strings with `~/<former-workspace>/`, `~/<former-archive>/` and "folder synchronisation"
-(`docs/CODE_MODIFICATIONS.md` lists the exact edit). Because the stamp binds the byte-exact committed file, the
-sha256 of this redacted copy differs from the value inside `PRESPEC_STAMP.txt`; every other character is
-identical. The proof therefore establishes when the stamp bundle existed, and the plan text can be compared with
-the stamped hash only against the unredacted original.
+(`docs/CODE_MODIFICATIONS.md` lists the exact edit); every other character is identical to the committed file.
+The proof file and the stamp file are byte-identical to the originals.
 
 Status. This plan specified the earlier cross-fitted design with permutation-based inference. A reproducibility
 audit later established that the statistic that design called AUTOC was non-standard, and the analysis reported in

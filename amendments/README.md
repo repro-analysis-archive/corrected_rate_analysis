@@ -17,8 +17,7 @@ Reading notes:
   documents ("instruction of record"). Those references are retained as written; the corresponding released
   material is mapped in the top-level `README.md` ("Where to find items cited in the manuscript") and in
   `results/README.md`.
-- Regime A of the Q3 diagnostic is called "honest" in the amendments and results records and "opposite-half" in
-  the manuscript and figures; regime C is "apparent" or "same-sample". The quantities are identical.
+- The terminology of the Q3 regimes in these records is mapped to the manuscript terminology in `results/README.md`.
 - The amendments were not prospectively pre-registered; they were protocol-locked after a reproducibility audit
   and before execution, as their headers state. The pre-specification of 2026-07-25 that preceded the audit is
   kept under `analysis_specs/historical_prespecification_2026-07-25/` as a historical record.

@@ -92,7 +92,7 @@
   }
  ],
  "figure": "Fig4",
- "question": "Q3 same-sample versus honest model-development/evaluation",
+ "question": "Q3 same-sample versus opposite-half model-development/evaluation",
  "kind": "grouped dot/range plot",
  "descriptive": true,
  "inferential": false,
@@ -104,7 +104,7 @@
   "H1": 370,
   "H2": 369
  },
- "x_label": "Change in RATE (same-sample - honest)",
+ "x_label": "Change in RATE (same-sample - opposite-half)",
  "pooled_definition": "(370*optimism_H1 + 369*optimism_H2)/739, predeclared in AMENDMENT_R7_Q3.md section 5",
  "rows": [
   {

@@ -43,18 +43,18 @@ Path resolution convention introduced by these edits:
 | `src/features/g1_qc_report.py` | `R2_features/g1_qc_report.py` | `b02d5c028c6f7c4e…` | `29d71855dd074bc2…` | Path resolution only. QC gate comparing the corrected radiomics with the original-study extraction; requires the original-study feature matrices. |
 | `src/features/pca_variance_retention.py` | `R2_features/pca_variance_retention.py` | `4d322eccdfb0712e…` | `a484a66fa0d75367…` | Path resolution only. Requires the original-study feature matrices for the ORIGINAL rows. |
 | `src/features/r2b_effective_bins_fix.py` | `R2_features/r2b_effective_bins_fix.py` | `c61919774c5a25b8…` | `c3b4332695da4f18…` | Path resolution; cohort membership derived from the workbook (cohort_ids). |
-| `src/figures/freeze_figure_data.py` | `figure round: freeze_figure_data_r7.py` | `c0866f8d30ace107…` | `c9fafce50d4338cc…` | Path resolution; reads the released results (single copy) and verifies them against the manifest of the frozen record; cohort and split counts taken from the provenance record because the split and epoch tables are not distributed. |
+| `src/figures/freeze_figure_data.py` | `figure round: freeze_figure_data_r7.py` | `c0866f8d30ace107…` | `f593eee8a4c7b1be…` | Path resolution; reads the released results (single copy) and verifies them against the manifest of the frozen record; cohort and split counts taken from the provenance record because the split and epoch tables are not distributed; three descriptive label strings for regime A use the manuscript term 'opposite-half' instead of the working term 'honest' (display text only; no value is affected). |
 | `src/figures/jiim_export_r7.m` | `figure round: matlab/jiim_export_r7.m` | `8000a0189c764991…` | `e80e6ff053bdf495…` | Creates the output directory if absent. |
 | `src/figures/make_Fig1.m` | `figure round: matlab/make_Fig1.m` | `e611dff66e87df6a…` | `026c8e016c807b51…` | Path resolution only. |
 | `src/figures/make_Fig2.m` | `figure round: matlab/make_Fig2.m` | `b97fff9117334112…` | `f0904820e512fbfe…` | Path resolution only. |
 | `src/figures/make_Fig3.m` | `figure round: matlab/make_Fig3.m` | `e1f7d02a0264bbd5…` | `96f22481af4c2dee…` | Path resolution only. |
-| `src/figures/make_Fig4.m` | `figure round: matlab/make_Fig4.m` | `6e84d0fe540699ca…` | `d84b3cfd3b761c3b…` | Path resolution only. |
+| `src/figures/make_Fig4.m` | `figure round: matlab/make_Fig4.m` | `6e84d0fe540699ca…` | `1b8bbb4d35b85ea4…` | Path resolution; the header comment uses the manuscript term 'opposite-half' (comment only). |
 | `src/figures/make_Fig5.m` | `figure round: matlab/make_Fig5.m` | `85f1ee3fd9629dc1…` | `482505ea0528ab13…` | Path resolution only. |
-| `figure_data/Fig1_data.json` | `figure round: canonical/Fig1_data.json` | `12e9e92c05230ab3…` | `82470f5cc0d0c98d…` | Provenance paths rewritten from local absolute paths to repository-relative paths; all plotted values and labels unchanged. |
-| `figure_data/Fig2_data.json` | `figure round: canonical/Fig2_data.json` | `8ced680185e9b0a2…` | `0958f08263e996f9…` | Provenance paths rewritten from local absolute paths to repository-relative paths; all plotted values and labels unchanged. |
-| `figure_data/Fig3_data.json` | `figure round: canonical/Fig3_data.json` | `d44841a78c6f3a55…` | `5faae2a0af6e87c0…` | Provenance paths rewritten from local absolute paths to repository-relative paths; all plotted values and labels unchanged. |
-| `figure_data/Fig4_data.json` | `figure round: canonical/Fig4_data.json` | `2abd9ccdcbd9cdda…` | `025edf2e9dc9d681…` | Provenance paths rewritten from local absolute paths to repository-relative paths; all plotted values and labels unchanged. |
-| `figure_data/Fig5_data.json` | `figure round: canonical/Fig5_data.json` | `363453e773cfb8f3…` | `9cd45842640b9b8f…` | Provenance paths rewritten from local absolute paths to repository-relative paths; all plotted values and labels unchanged. |
+| `figure_data/Fig1_data.json` | `figure round: canonical/Fig1_data.json` | `12e9e92c05230ab3…` | `b04ed923cbb48c79…` | Provenance paths rewritten from local absolute paths to repository-relative paths; descriptive label text for regime A changed from the working term 'honest' to the manuscript term 'opposite-half'; all plotted values unchanged. |
+| `figure_data/Fig2_data.json` | `figure round: canonical/Fig2_data.json` | `8ced680185e9b0a2…` | `0958f08263e996f9…` | Provenance paths rewritten from local absolute paths to repository-relative paths; all plotted values unchanged. |
+| `figure_data/Fig3_data.json` | `figure round: canonical/Fig3_data.json` | `d44841a78c6f3a55…` | `5faae2a0af6e87c0…` | Provenance paths rewritten from local absolute paths to repository-relative paths; all plotted values unchanged. |
+| `figure_data/Fig4_data.json` | `figure round: canonical/Fig4_data.json` | `2abd9ccdcbd9cdda…` | `d969fb757b5bed1d…` | Provenance paths rewritten from local absolute paths to repository-relative paths; descriptive label text for regime A changed from the working term 'honest' to the manuscript term 'opposite-half'; all plotted values unchanged. |
+| `figure_data/Fig5_data.json` | `figure round: canonical/Fig5_data.json` | `363453e773cfb8f3…` | `9cd45842640b9b8f…` | Provenance paths rewritten from local absolute paths to repository-relative paths; all plotted values unchanged. |
 | `environment/environment.yml` | `R0_freeze_audit/env/environment.yml` | `7b5bd477172e9f79…` | `e9fe53bd49939114…` | conda `prefix:` line (local path) removed. |
 | `environment/environment_features.yml` | `R0_freeze_audit/env/environment_features.yml` | `2e6bdbbc13f271b1…` | `9fe1687d4a3953c2…` | conda `prefix:` line (local path) removed. |
 | `environment/build_env.sh` | `R0_freeze_audit/env/build_env.sh` | `719e2ecee2c8509f…` | `0f8555db70c9a64b…` | Local conda and output paths replaced by PATH lookups and the script directory. |
@@ -1003,6 +1003,29 @@ Path resolution convention introduced by these edits:
  
  assert n739 == 739 and n_H1 == 370 and n_H2 == 369 and n980 == 980 and n728 == 728 and n241 == 241, \
      (n739, n_H1, n_H2, n980, n728, n241)
+@@ -134,7 +125,7 @@
+                        "role": "parallel sensitivity branch from HER2-negative, not a sequential exclusion"}},
+     questions=[{"key": "Q1", "text": "Configuration-specific RATE/AUTOC on independent held-out evaluation"},
+                {"key": "Q2", "text": "Paired incremental RATE comparison"},
+-               {"key": "Q3", "text": "Honest vs same-sample model-development/evaluation diagnostic"},
++               {"key": "Q3", "text": "Opposite-half vs same-sample model-development/evaluation diagnostic"},
+                {"key": "Q4", "text": "Preprocessing-placement diagnostic, opposite-half model fitting"}],
+     directions={"Q1": "one direction (train H1 -> evaluate H2)", "Q2": "one direction (train H1 -> evaluate H2)",
+                 "Q3": "both split directions", "Q4": "both split directions"},
+@@ -193,11 +184,11 @@
+ w("Fig3_data.json", f3)
+ 
+ # ---------------- Fig 4 ----------------
+-f4 = dict(BASE, figure="Fig4", question="Q3 same-sample versus honest model-development/evaluation",
++f4 = dict(BASE, figure="Fig4", question="Q3 same-sample versus opposite-half model-development/evaluation",
+     kind="grouped dot/range plot", descriptive=True, inferential=False,
+     interval="NONE", p_value="NONE", reference_line=0.0,
+     analytic_n=n739, evaluation_n={"H1": n_H1, "H2": n_H2},
+-    x_label="Change in RATE (same-sample - honest)",
++    x_label="Change in RATE (same-sample - opposite-half)",
+     pooled_definition=q3["design"]["pooled"],
+     rows=[{"key": k, "label": LABEL[i], "order": i + 1,
+            "H1": q3["results"][k]["optimism_H1"], "H2": q3["results"][k]["optimism_H2"],
 ```
 
 ### `src/figures/jiim_export_r7.m`
@@ -1079,7 +1102,9 @@ Path resolution convention introduced by these edits:
 ```diff
 --- original/make_Fig4.m
 +++ release/src/figures/make_Fig4.m
-@@ -2,8 +2,8 @@
+@@ -1,9 +1,9 @@
+-% make_Fig4.m — Q3: change in the RATE point estimate under same-sample versus honest
++% make_Fig4.m — Q3: change in the RATE point estimate under same-sample versus opposite-half
  % model development/evaluation. Descriptive; no interval, no p-value. Class V.
  S = jiim_style_r7();
  here = fileparts(mfilename('fullpath'));
@@ -1207,6 +1232,15 @@ Path resolution convention introduced by these edits:
     "verified": "sha256 recorded"
    }
   ],
+@@ -145,7 +145,7 @@
+   },
+   {
+    "key": "Q3",
+-   "text": "Honest vs same-sample model-development/evaluation diagnostic"
++   "text": "Opposite-half vs same-sample model-development/evaluation diagnostic"
+   },
+   {
+    "key": "Q4",
 ```
 
 ### `figure_data/Fig2_data.json`
@@ -1412,7 +1446,7 @@ Path resolution convention introduced by these edits:
 ```diff
 --- original/Fig4_data.json
 +++ release/figure_data/Fig4_data.json
-@@ -22,72 +22,72 @@
+@@ -22,77 +22,77 @@
   "provenance": [
    {
     "file": "rate_q1_primary.json",
@@ -1504,6 +1538,21 @@ Path resolution convention introduced by these edits:
     "verified": "sha256 recorded"
    }
   ],
+  "figure": "Fig4",
+- "question": "Q3 same-sample versus honest model-development/evaluation",
++ "question": "Q3 same-sample versus opposite-half model-development/evaluation",
+  "kind": "grouped dot/range plot",
+  "descriptive": true,
+  "inferential": false,
+@@ -104,7 +104,7 @@
+   "H1": 370,
+   "H2": 369
+  },
+- "x_label": "Change in RATE (same-sample - honest)",
++ "x_label": "Change in RATE (same-sample - opposite-half)",
+  "pooled_definition": "(370*optimism_H1 + 369*optimism_H2)/739, predeclared in AMENDMENT_R7_Q3.md section 5",
+  "rows": [
+   {
 ```
 
 ### `figure_data/Fig5_data.json`

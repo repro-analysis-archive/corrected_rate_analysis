@@ -82,7 +82,7 @@ against `checksums/SHA256SUMS.txt`.
 | cited item | location in this repository |
 |---|---|
 | `R7_rate_primary/AMENDMENT_R7_RATE.md`, the specification of the replacement analysis | `amendments/AMENDMENT_R7_RATE.md` (sha256 `2c4fafd0…b0d13a`, as recorded in `results/rate_primary/RESULTS_R7_RATE.md`) |
-| analysis plan timestamped on 2026-07-25 (historical record) | `analysis_specs/historical_prespecification_2026-07-25/` |
+| analysis plan timestamped on 2026-07-25 (historical record) | `analysis_specs/historical_prespecification_2026-07-25/` (redacted copy; the OpenTimestamps proof authenticates the original private unredacted record, not the bytes of the public copy) |
 | fixed split (H1 = 370, H2 = 369) | `splits/` (generation code `src/rate_analysis/r7_common.py`, seed 42, digests in `splits/SPLIT_DIGESTS.json`) |
 | per-patient priorities and common evaluation scores | `derived_data/` |
 | model settings and seeds | `config/`, `seeds/` |
