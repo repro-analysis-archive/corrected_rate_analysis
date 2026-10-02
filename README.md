@@ -1,9 +1,26 @@
 # Corrected RATE/AUTOC analysis of treatment-effect prioritization with clinical, radiomic and foundation-model breast MRI features
 
+## Associated publication
+
+**Hisashi Nakano, Takehiro Shiinoki**
+
+*Separating Ranking Signal, Incremental Feature Value, and Evaluation-Induced Optimism in Breast MRI Treatment-Effect
+Analysis: Foundation Model and Radiomic Representations*
+
+**Journal of Imaging Informatics in Medicine** (2026)
+
+DOI: https://doi.org/10.1007/s10278-026-02344-w
+
+Published online: 29 September 2026
+
+(Manuscript ID during review: JDIM-D-26-02440; the frozen records under `amendments/`, `analysis_specs/` and
+`results/` refer to the article by this ID.)
+
 Code, frozen analysis specifications and amendments, the fixed sample-split design (code, seeds and verification
 digests), model settings, machine-readable derived analysis outputs and figure-source data for reproducing the
-corrected analyses reported in the revised manuscript **JDIM-D-26-02440** (*Journal of Imaging Informatics in
-Medicine*).
+corrected analyses reported in the published article: Nakano H, Shiinoki T. *Separating Ranking Signal, Incremental
+Feature Value, and Evaluation-Induced Optimism in Breast MRI Treatment-Effect Analysis: Foundation Model and Radiomic
+Representations.* Journal of Imaging Informatics in Medicine (2026). https://doi.org/10.1007/s10278-026-02344-w
 
 The analysis asks whether treatment-prioritization rules built from harmonized clinical variables, with or without
 pretreatment DCE-MRI features (conventional radiomics, BiomedCLIP and RAD-DINO image representations), rank
@@ -77,7 +94,7 @@ priorities (Q1 primary, Q2 primary, three of the four Q2 sensitivities, all of Q
 call and seed, and compares them with `results/`. `bash scripts/verify_checksums.sh` verifies every released file
 against `checksums/SHA256SUMS.txt`.
 
-## Where to find items cited in the manuscript
+## Where to find items cited in the article
 
 | cited item | location in this repository |
 |---|---|
@@ -92,9 +109,9 @@ against `checksums/SHA256SUMS.txt`.
 
 ## Reproducibility note
 
-This repository corresponds to the **corrected revision analysis**: standard centred doubly robust RATE/AUTOC
-(grf 2.6.1) on an independent held-out half, with the two-way Q3 and Q4 diagnostics as point-estimate
-descriptions. It does not contain the retired earlier analyses.
+This repository corresponds to the **corrected analysis** reported in the published article: standard centred
+doubly robust RATE/AUTOC (grf 2.6.1) on an independent held-out half, with the two-way Q3 and Q4 diagnostics as
+point-estimate descriptions. It does not contain the retired earlier analyses.
 
 The record documents under `results/` and `amendments/` are reproduced verbatim. Identifiers inside them, such as
 Git commit hashes (for example `755aecb2`), decision numbers (for example D45a) and round labels (R7, `FROZEN_R7`),
